@@ -1,12 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,900;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+
 
 *{
     padding:0;
     margin:0;
     font-family: 'Montserrat', sans-serif;
 }
-h2 span{
-    color:#0AA4E4;
+body {
+    background: #FCFCFC;
+}
+h2.h2Title {
+    border-bottom: 2px solid;
+    display: initial;
+}
+h2 span {
+    color: #0AA4E4;
+    border-bottom: 2px solid;
 }
 
 p{
@@ -54,11 +65,19 @@ header.mainNav{
 
 .mainBanner {
     position: relative;
-    background: url('https://ananddipak.github.io/SkipperMetzer/wp-content/themes/SkipperMetzer/Images/Banner-photos/Banner-one.jpg')no-repeat center;
+    background: url('/wp-content/themes/SkipperMetzer/Images/Banner-photos/Banner-one.jpg')no-repeat center;
     background-size: cover;
     width: 100%;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
 }
+
+    .mainBanner img.logo {
+        margin-top: 10%;
+    }
 .bannerFooter{
     position:absolute;
     bottom:0;
@@ -157,18 +176,251 @@ footer.mainfooter .innerBox address p i{
     background-size:cover;
     width: 100%;
     height:250px;
+    position:relative;
 }
 .viewSector .rowCrops {
-    background: url('https://ananddipak.github.io/SkipperMetzer/wp-content/themes/SkipperMetzer/Images/Sectors-photo/rowCrops.jpg')no-repeat center;
+    background: url('/wp-content/themes/SkipperMetzer/Images/Sectors-photo/rowCrops.jpg')no-repeat center;
 }
 .viewSector .orchards {
-    background: url('https://ananddipak.github.io/SkipperMetzer/wp-content/themes/SkipperMetzer/Images/Sectors-photo/orchards.jpg')no-repeat center;
+    background: url('/wp-content/themes/SkipperMetzer/Images/Sectors-photo/orchards.jpg')no-repeat center;
 }
 .viewSector .greenHouses {
-    background: url('https://ananddipak.github.io/SkipperMetzer/wp-content/themes/SkipperMetzer/Images/Sectors-photo/greenhouse.jpg')no-repeat center;
+    background: url('/wp-content/themes/SkipperMetzer/Images/Sectors-photo/greenhouse.jpg')no-repeat center;
 }
 .viewSector .landScaping {
-    background: url('https://ananddipak.github.io/SkipperMetzer/wp-content/themes/SkipperMetzer/Images/Sectors-photo/landScaping.jpg')no-repeat center;
+    background: url('/wp-content/themes/SkipperMetzer/Images/Sectors-photo/landScaping.jpg')no-repeat center;
 }
-/*.viewSector
-*/
+.viewSector .innerField {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    width: 70%;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+}
+    .viewSector .innerField .angl {
+        width: 32px;
+        height: 32px;
+        z-index: 0;
+        margin-left: -16px;
+        transform: rotate( 45deg );
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .viewSector .innerField h4 {
+        padding: 10px;
+        margin: 0;
+    }
+
+.testimonialsSec .testimonial {
+    margin: 0 20px 40px;
+}
+
+    .testimonialsSec .testimonial .testimonial-content {
+        padding: 35px 25px 35px 50px;
+        margin-bottom: 35px;
+        background: #fff;
+        border: 1px solid #f0f0f0;
+        position: relative;
+    }
+
+        .testimonialsSec .testimonial .testimonial-content:after {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            position: absolute;
+            bottom: -10px;
+            left: 22px;
+            transform: rotate(45deg);
+        }
+
+.testimonialsSec .testimonial-content .testimonial-icon {
+    width: 50px;
+    height: 45px;
+    background: #ff4242;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    line-height: 42px;
+    position: absolute;
+    top: 37px;
+    left: -19px;
+}
+
+    .testimonialsSec .testimonial-content .testimonial-icon:before {
+        content: "";
+        border-bottom: 16px solid #e41212;
+        border-left: 18px solid transparent;
+        position: absolute;
+        top: -16px;
+        left: 1px;
+    }
+
+.testimonialsSec .testimonial .description {
+    font-size: 15px;
+    font-style: italic;
+    color: #8a8a8a;
+    line-height: 23px;
+    margin: 0;
+}
+
+.testimonialsSec .testimonial .title {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #525252;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 0 0 5px 0;
+}
+
+.testimonialsSec .testimonial .post {
+    display: block;
+    font-size: 14px;
+    color: #ff4242;
+}
+
+.testimonialsSec .owl-theme .owl-controls {
+    margin-top: 20px;
+}
+
+    .testimonialsSec .owl-theme .owl-controls .owl-page span {
+        background: #ccc;
+        opacity: 1;
+        transition: all 0.4s ease 0s;
+    }
+
+    .testimonialsSec .owl-theme .owl-controls .owl-page.active span,
+    .testimonialsSec .owl-theme .owl-controls.clickable .owl-page:hover span {
+        background: #04275C;
+    }
+
+.ContactSec {
+    background: url('/wp-content/themes/SkipperMetzer/Images/Banner-photos/Bannermain.jpg')no-repeat bottom;
+    background-size: cover;
+    min-height:500px;
+}
+    .ContactSec .overlay{
+        background-color:rgba(0,0,0,.6);
+        height:100vh;
+    }
+        .ContactSec .overlay h2 {
+            font-family: 'Pinyon Script', cursive;
+            font-size:2.5rem;
+        }
+
+
+
+.addressSec .address {
+    margin: 0 20px 40px;
+}
+
+    .addressSec .address .address-content {
+        padding: 20px;
+        margin-bottom: 35px;
+        background: #fff;
+        border: none;
+        position: relative;
+        -webkit-box-shadow: 0px 0px 10px 1px rgba(230,230,230,1);
+        -moz-box-shadow: 0px 0px 10px 1px rgba(230,230,230,1);
+        box-shadow: 0px 0px 10px 1px rgba(230,230,230,1);
+    }
+
+/*        .addressSec .address .address-content:after {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            position: absolute;
+            bottom: -10px;
+            left: 22px;
+            transform: rotate(45deg);
+        }*/
+
+        .addressSec .address .address-content .address-icon {
+            width: 50px;
+            height: 45px;
+            background: #ff4242;
+            text-align: center;
+            font-size: 22px;
+            color: #fff;
+            line-height: 42px;
+            position: absolute;
+            top: 37px;
+            left: -19px;
+        }
+
+            .addressSec .address .address-content .address-icon:before {
+                content: "";
+                border-bottom: 16px solid #e41212;
+                border-left: 18px solid transparent;
+                position: absolute;
+                top: -16px;
+                left: 1px;
+            }
+
+    .addressSec .address .description {
+        font-size: 14px;
+        font-family: 'Mulish', sans-serif;
+        font-style: normal;
+        color: #8a8a8a;
+        line-height: 18px;
+        letter-spacing: .5px;
+        margin-bottom: 5px;
+        display: flex;
+        /* align-items: center; */
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+    }
+        .addressSec .address .description i {
+            color: #04275C;
+            font-size: 16px;
+            padding-top:2px;
+            padding-right: 10px;
+        }
+        }
+
+        .addressSec .address .title {
+            display: block;
+            font-size: 18px;
+            font-weight: 700;
+            color: #0AA4E4;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            margin: 0 0 5px 0;
+        }
+
+    .addressSec .address .post {
+        display: block;
+        font-size: 14px;
+        color: #ff4242;
+    }
+
+    .addressSec .owl-carousel .owl-wrapper-outer {
+        padding: 10px 0;
+    }
+
+    .addressSec .owl-theme .owl-controls {
+        margin-top: 20px;
+    }
+
+    .addressSec .owl-theme .owl-controls .owl-page span {
+        background: #ccc;
+        opacity: 1;
+        transition: all 0.4s ease 0s;
+    }
+
+    .addressSec .owl-theme .owl-controls .owl-page.active span,
+    .addressSec.addressSec .owl-theme .owl-controls.clickable .owl-page:hover span {
+        background: #0AA4E4;
+    }

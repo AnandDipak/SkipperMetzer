@@ -12,7 +12,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="/wp-content/themes/SkipperMetzer/Css/Style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f3aebf1c73.js" crossorigin="anonymous"></script>
-
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
     <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
@@ -54,6 +55,8 @@
         .goog-te-menu-value span:nth-child(5) {
             display: none;
         }
+
+
     </style>
 </head>
 
@@ -89,6 +92,8 @@
         </header>
         <main>
             <section class="mainBanner">
+                <img src="/wp-content/themes/SkipperMetzer/Images/Logo-photo/logo.png" alt="" class="img-responsive w-25 logo">
+                <h1 class="text-white mt-3">Micro Irrigation Solutions</h1>
                 <footer class="bannerFooter">
                     <div class="footerbox">
                         <img src="/wp-content/themes/SkipperMetzer/Images/Logo-photo/flags.png" alt="" class="img-responsive" style="max-width:100px">
@@ -102,27 +107,31 @@
                         <div class="col-md-3">
                             <div class="rowCrops">
                                 <div class="innerField">
+                                <div class="angl"></div>
                                     <h4>Row Crops</h4>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="orchards">
-                                <div>
+                                <div class="innerField">
+                                    <div class="angl"></div>
                                     <h4>Orchards</h4>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="greenHouses">
-                                <div>
+                                <div class="innerField">
+                                <div class="angl"></div>
                                     <h4>Green Houses</h4>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="landScaping">
-                                <div>
+                                <div class="innerField">
+                                <div class="angl"></div>
                                     <h4>Land Scaping</h4>
                                 </div>
                             </div>
@@ -134,7 +143,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 text-center py-5">
-                            <h2 class="text-white">About <span>Us</span></h2>
+                            <h2 class="text-white h2Title">About <span>Us</span></h2>
                             <p>Skipper Metzer India LLP is an Indo-Israeli joint venture between M/s Skipper 
                             Limited, India and M/s Metzer, Israel, to foray into Micro Irrigation market in India with 
                             an objective to become a key player and bring in new technologies in the growing 
@@ -146,6 +155,236 @@
                             decades of experience in Micro Irrigation...
                             </p>
                             <a href="#" class="btn readmoreBtn mt-5">Read More<i class="fas fa-long-arrow-alt-right ms-3"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="testimonialsSec">
+                <div class="demo">
+                    <div class="container">
+                        <div class="row mt-5 ">
+                            <div class="col-md-12 text-center">
+                                 <h2 class="h2Title">Our <span>Testimonials</span></h2>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-md-12">
+                                <div id="testimonial-slider" class="owl-carousel">
+                                    <div class="testimonial">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-icon">
+                                                <i class="fa fa-quote-left"></i>
+                                            </div>
+                                            <p class="description">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit amet eros imperdiet, sit amet hendrerit nisi vehicula.
+                                            </p>
+                                        </div>
+                                        <h3 class="title">williamson</h3>
+                                        <span class="post">Web Developer</span>
+                                    </div>
+ 
+                                    <div class="testimonial">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-icon">
+                                                <i class="fa fa-quote-left"></i>
+                                            </div>
+                                            <p class="description">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit amet eros imperdiet, sit amet hendrerit nisi vehicula.
+                                            </p>
+                                        </div>
+                                        <h3 class="title">Kristina</h3>
+                                        <span class="post">Web Designer</span>
+                                    </div>
+ 
+                                    <div class="testimonial">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-icon">
+                                                <i class="fa fa-quote-left"></i>
+                                            </div>
+                                            <p class="description">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit amet eros imperdiet, sit amet hendrerit nisi vehicula.
+                                            </p>
+                                        </div>
+                                        <h3 class="title">williamson</h3>
+                                        <span class="post">Web Developer</span>
+                                    </div>
+                                    <div class="testimonial">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-icon">
+                                                <i class="fa fa-quote-left"></i>
+                                            </div>
+                                            <p class="description">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit amet eros imperdiet, sit amet hendrerit nisi vehicula.
+                                            </p>
+                                        </div>
+                                        <h3 class="title">williamson</h3>
+                                        <span class="post">Web Developer</span>
+                                    </div>
+ 
+                                    <div class="testimonial">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-icon">
+                                                <i class="fa fa-quote-left"></i>
+                                            </div>
+                                            <p class="description">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit amet eros imperdiet, sit amet hendrerit nisi vehicula.
+                                            </p>
+                                        </div>
+                                        <h3 class="title">Kristina</h3>
+                                        <span class="post">Web Designer</span>
+                                    </div>
+ 
+                                    <div class="testimonial">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-icon">
+                                                <i class="fa fa-quote-left"></i>
+                                            </div>
+                                            <p class="description">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit amet eros imperdiet, sit amet hendrerit nisi vehicula.
+                                            </p>
+                                        </div>
+                                        <h3 class="title">williamson</h3>
+                                        <span class="post">Web Developer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ContactSec">
+                <div class="overlay">
+                    <div class="row">
+                        <div class="col-md-6 p-5">
+                                 <h2 class="text-white">Leave me message</h2>
+                        </div>
+                        <div class="col-md-6 p-5"></div>
+                    </div>
+                </div>
+            </section>
+             <section class="addressSec">
+                <div class="demo">
+                    <div class="container-fluid">
+                        <div class="row mt-5 ">
+                            <div class="col-md-12 text-center">
+                                 <h2 class="h2Title">Our <span>Locations</span></h2>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-md-12">
+                                <div id="address-slider" class="owl-carousel">
+                                    <div class="address">
+                                        <div class="address-content">
+                                            <h3 class="title">williamson</h3>
+                                            
+                                            <p class="description">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                Door No. 2/208-2,
+                                                Opp. Ayurvedic 
+                                                Hospital, 2nd road,
+                                                Anantapur- 
+                                                515001, Andhra Pradesh
+                                            </p>
+                                            <p class="description">
+                                                <i class="fas fa-phone-alt"></i>
+                                                +91 40 27243427, +91 9989773604
+                                            </p>
+                                            <p class="description">
+                                                <i class="fas fa-envelope"></i>
+                                                customercare@skippermetzer.com
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="address">
+                                        <div class="address-content">
+                                            <h3 class="title">williamson</h3>
+                                            
+                                            <p class="description">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                Door No. 2/208-2,
+                                                Opp. Ayurvedic 
+                                                Hospital, 2nd road,
+                                                Anantapur- 
+                                                515001, Andhra Pradesh
+                                            </p>
+                                            <p class="description">
+                                                <i class="fas fa-phone-alt"></i>
+                                                +91 40 27243427, +91 9989773604
+                                            </p>
+                                            <p class="description">
+                                                <i class="fas fa-envelope"></i>
+                                                customercare@skippermetzer.com
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="address">
+                                        <div class="address-content">
+                                            <h3 class="title">williamson</h3>
+                                            
+                                            <p class="description">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                Door No. 2/208-2,
+                                                Opp. Ayurvedic 
+                                                Hospital, 2nd road,
+                                                Anantapur- 
+                                                515001, Andhra Pradesh
+                                            </p>
+                                            <p class="description">
+                                                <i class="fas fa-phone-alt"></i>
+                                                +91 40 27243427, +91 9989773604
+                                            </p>
+                                            <p class="description">
+                                                <i class="fas fa-envelope"></i>
+                                                customercare@skippermetzer.com
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="address">
+                                        <div class="address-content">
+                                            <h3 class="title">williamson</h3>
+                                            
+                                            <p class="description">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                Door No. 2/208-2,
+                                                Opp. Ayurvedic 
+                                                Hospital, 2nd road,
+                                                Anantapur- 
+                                                515001, Andhra Pradesh
+                                            </p>
+                                            <p class="description">
+                                                <i class="fas fa-phone-alt"></i>
+                                                +91 40 27243427, +91 9989773604
+                                            </p>
+                                            <p class="description">
+                                                <i class="fas fa-envelope"></i>
+                                                customercare@skippermetzer.com
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="address">
+                                        <div class="address-content">
+                                            <h3 class="title">williamson</h3>
+                                            
+                                            <p class="description">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                Door No. 2/208-2,
+                                                Opp. Ayurvedic 
+                                                Hospital, 2nd road,
+                                                Anantapur- 
+                                                515001, Andhra Pradesh
+                                            </p>
+                                            <p class="description">
+                                                <i class="fas fa-phone-alt"></i>
+                                                +91 40 27243427, +91 9989773604
+                                            </p>
+                                            <p class="description">
+                                                <i class="fas fa-envelope"></i>
+                                                customercare@skippermetzer.com
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -253,10 +492,37 @@
     </div>
 
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>    
+         <script type="text/javascript">
+          $(document).ready(function(){
+            $("#testimonial-slider").owlCarousel({
+                items:2,
+                itemsDesktop:[1000,3],
+                itemsDesktopSmall:[980,2],
+                itemsTablet:[768,2],
+                itemsMobile:[650,1],
+                pagination:true,
+                navigation:false,
+                slideSpeed:1000,
+                autoPlay:true
+            });
+            $("#address-slider").owlCarousel({
+                items:4,
+                itemsDesktop:[1000,4],
+                itemsDesktopSmall:[980,3],
+                itemsTablet:[768,2],
+                itemsMobile:[650,1],
+                pagination:true,
+                navigation:false,
+                slideSpeed:1000,
+                autoPlay:true
+            });
+        });
+         </script>
 </body>
 
 </html>
