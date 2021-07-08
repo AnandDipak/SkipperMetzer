@@ -67,7 +67,7 @@ header.mainNav{
 
 .mainBanner {
     position: relative;
-    background: url('/wp-content/themes/SkipperMetzer/Images/Banner-photos/Banner-one.jpg')no-repeat center;
+    background: url('https://ananddipak.github.io/SkipperMetzer/wp-content/themes/SkipperMetzer/Images/Banner-photos/Banner-one.jpg')no-repeat center;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -203,7 +203,7 @@ footer.mainfooter .innerBox address p i{
 
 
 .amenities {
-    background: url('/wp-content/themes/SkipperMetzer/Images/Home-images/banner2.png')no-repeat bottom;
+    background: url('https://ananddipak.github.io/SkipperMetzer/wp-content/themes/SkipperMetzer/Images/Home-images/banner2.png')no-repeat bottom;
     background-size: cover;
 }
 
@@ -230,7 +230,7 @@ footer.mainfooter .innerBox address p i{
                     font-size:48px;
                 }
 .productSec .poductBox {
-    background: url('/wp-content/themes/SkipperMetzer/Images/Home-images/Frame-8.png')no-repeat bottom;
+    background: url('https://ananddipak.github.io/SkipperMetzer/wp-content/themes/SkipperMetzer/Images/Home-images/Frame-8.png')no-repeat bottom;
     background-size: cover;
     min-height: 300px;
     color: #fff;
@@ -377,16 +377,16 @@ footer.mainfooter .innerBox address p i{
     position:relative;
 }
 .viewSector .rowCrops {
-    background: url('/wp-content/themes/SkipperMetzer/Images/Home-images/Rectangle-11.png')no-repeat center;
+    background: url('https://ananddipak.github.io/SkipperMetzer/wp-content/themes/SkipperMetzer/Images/Home-images/Rectangle-11.png')no-repeat center;
 }
 .viewSector .orchards {
-    background: url('/wp-content/themes/SkipperMetzer/Images/Home-images/Rectangle-12.png')no-repeat center;
+    background: url('https://ananddipak.github.io/SkipperMetzer/wp-content/themes/SkipperMetzer/Images/Home-images/Rectangle-12.png')no-repeat center;
 }
 .viewSector .greenHouses {
-    background: url('/wp-content/themes/SkipperMetzer/Images/Home-images/Rectangle-13.png')no-repeat center;
+    background: url('https://ananddipak.github.io/SkipperMetzer/wp-content/themes/SkipperMetzer/Images/Home-images/Rectangle-13.png')no-repeat center;
 }
 .viewSector .landScaping {
-    background: url('/wp-content/themes/SkipperMetzer/Images/Home-images/Rectangle-14.png')no-repeat center;
+    background: url('https://ananddipak.github.io/SkipperMetzer/wp-content/themes/SkipperMetzer/Images/Home-images/Rectangle-14.png')no-repeat center;
 }
 .viewSector .innerField {
     position: absolute;
@@ -502,7 +502,7 @@ footer.mainfooter .innerBox address p i{
     }
 
 .ContactSec {
-    background: url('/wp-content/themes/SkipperMetzer/Images/Home-images/banner.png')no-repeat bottom;
+    background: url('https://ananddipak.github.io/SkipperMetzer/wp-content/themes/SkipperMetzer/Images/Home-images/banner.png')no-repeat bottom;
     background-size: cover;
     /*min-height:500px;*/
 }
