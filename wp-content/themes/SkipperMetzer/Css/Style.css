@@ -14,11 +14,13 @@ body {
 h2.h2Title {
     border-bottom: 2px solid;
     display: initial;
+    padding-bottom:5px;
 }
-h2 span {
-    color: #0AA4E4;
-    border-bottom: 2px solid;
-}
+    h2.h2Title span {
+        color: #0AA4E4;
+        border-bottom: 2px solid;
+        padding-bottom: 5px;
+    }
 
 p{
     margin:0;
@@ -113,9 +115,50 @@ footer.mainfooter{
 
 }
 
-footer.mainfooter .innerBox{
-    margin-top:40px;
+.dripIrregationSystem img{
+    width:160px; height:160px;
     padding:10px;
+}
+.dripIrregationSystem .boxInnerDescription h2 {
+    font-size: 1.5rem;
+    color: #0AA4E4;
+}
+.dripIrregationSystem .boxInnerRight {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+}
+    .dripIrregationSystem .boxInnerRight .boxInnerDescription {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: space-around;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .dripIrregationSystem .boxInnerLeft {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+    }
+        .dripIrregationSystem .boxInnerLeft .boxInnerDescription {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: space-around;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+footer.mainfooter .innerBox {
+    margin-top: 40px;
+    padding: 10px;
     color: rgba(255, 255, 255, 0.7);
 }
 
@@ -148,6 +191,7 @@ footer.mainfooter .innerBox address p{
     align-items: flex-start;
     justify-content: center;
     align-content: stretch;
+    word-break:break-all;
 }
 
 footer.mainfooter .innerBox address p i{
@@ -156,19 +200,173 @@ footer.mainfooter .innerBox address p i{
     padding:5px;
     padding-right:24px;
 }
-.aboutUSback {
-    background: linear-gradient(98.91deg, rgba(0, 0, 0, 0.9) 7.28%, rgba(30, 29, 29, 0.9) 52.45%, rgba(0, 0, 0, 0.9) 92.96%);
 
+
+.amenities {
+    background: url('/wp-content/themes/SkipperMetzer/Images/Home-images/banner2.png')no-repeat bottom;
+    background-size: cover;
 }
-.aboutUSback p{
+
+    .amenities .overlay {
+        /*background-color: rgba(0,0,0,.6);*/
+    }
+        .amenities .overlay .makeCenter {
+            display: flex !important;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+            .amenities .overlay .makeCenter .circle {
+                border: 4px solid #fff;
+                border-radius: 50%;
+                width: 150px;
+                height: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+            }
+                .amenities .overlay .makeCenter .circle i{
+                    font-size:48px;
+                }
+.productSec .poductBox {
+    background: url('/wp-content/themes/SkipperMetzer/Images/Home-images/Frame-8.png')no-repeat bottom;
+    background-size: cover;
+    min-height: 300px;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+    .productSec .poductBox  h4{
+        
+    }
+
+.productSec .product {
+    margin: 0 20px 40px;
+}
+
+    .productSec .product .product-content {
+        padding: 10px;
+        /*margin-bottom: 35px;*/
+        background: #fff;
+        border: 1px solid #f0f0f0;
+        position: relative;
+        min-height:280px;
+    }
+
+        /*.productSec .product .product-content:after {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            position: absolute;
+            bottom: -10px;
+            left: 22px;
+            transform: rotate(45deg);
+        }*/
+
+.productSec .product-content .product-icon {
+    width: 50px;
+    height: 45px;
+    background: #ff4242;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    line-height: 42px;
+    position: absolute;
+    top: 37px;
+    left: -19px;
+}
+
+    .productSec .product-content .product-icon:before {
+        content: "";
+        border-bottom: 16px solid #e41212;
+        border-left: 18px solid transparent;
+        position: absolute;
+        top: -16px;
+        left: 1px;
+    }
+
+.productSec .product .description {
+    font-size: 12px;
+    font-style: normal;
+    color: #8a8a8a;
+    line-height: 14px;
+    margin: 0;
+    word-break:break-word;
+}
+    .productSec .product .description img{
+        height:100px;
+    }
+
+    .productSec .product .title {
+        display: block;
+        font-size: 18px;
+        font-weight: 700;
+        color: #525252;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        margin: 0 0 5px 0;
+    }
+
+.productSec .product .post {
+    display: block;
+    font-size: 14px;
+    color: #ff4242;
+}
+
+.productSec .owl-theme .owl-controls {
+    margin-top: 20px;
+}
+
+    .productSec .owl-theme .owl-controls .owl-page span {
+        background: #ccc;
+        opacity: 1;
+        transition: all 0.4s ease 0s;
+    }
+
+    .productSec .owl-theme .owl-controls .owl-page.active span,
+    .productSec .owl-theme .owl-controls.clickable .owl-page:hover span {
+        background: #04275C;
+    }
+
+    .aboutUSback {
+        background: linear-gradient(98.91deg, rgba(0, 0, 0, 0.9) 7.28%, rgba(30, 29, 29, 0.9) 52.45%, rgba(0, 0, 0, 0.9) 92.96%);
+    }
+
+.aboutUSback p {
     color: rgba(255, 255, 255, 0.7);
-    max-width:600px;
-    margin:auto;
+    max-width: 600px;
+    margin: auto;
 }
 .aboutUSback  .readmoreBtn{
     padding:10px 20px;
     background:#fff;
 }
+
+.blogs {
+    background: #F3FBFF;
+}
+    .blogs h2.h2Title {
+        border-bottom: 2px solid;
+        display: initial;
+        padding-bottom: 5px;
+    }
+
+        .blogs h2.h2Title span {
+            color: initial;
+            border-bottom: 2px solid #0AA4E4;
+            padding-bottom: 5px;
+        }
+
+
 .viewSector .rowCrops,
 .viewSector .orchards,
 .viewSector .greenHouses,
@@ -179,21 +377,21 @@ footer.mainfooter .innerBox address p i{
     position:relative;
 }
 .viewSector .rowCrops {
-    background: url('/wp-content/themes/SkipperMetzer/Images/Sectors-photo/rowCrops.jpg')no-repeat center;
+    background: url('/wp-content/themes/SkipperMetzer/Images/Home-images/Rectangle-11.png')no-repeat center;
 }
 .viewSector .orchards {
-    background: url('/wp-content/themes/SkipperMetzer/Images/Sectors-photo/orchards.jpg')no-repeat center;
+    background: url('/wp-content/themes/SkipperMetzer/Images/Home-images/Rectangle-12.png')no-repeat center;
 }
 .viewSector .greenHouses {
-    background: url('/wp-content/themes/SkipperMetzer/Images/Sectors-photo/greenhouse.jpg')no-repeat center;
+    background: url('/wp-content/themes/SkipperMetzer/Images/Home-images/Rectangle-13.png')no-repeat center;
 }
 .viewSector .landScaping {
-    background: url('/wp-content/themes/SkipperMetzer/Images/Sectors-photo/landScaping.jpg')no-repeat center;
+    background: url('/wp-content/themes/SkipperMetzer/Images/Home-images/Rectangle-14.png')no-repeat center;
 }
 .viewSector .innerField {
     position: absolute;
     right: 0;
-    bottom: 10px;
+    bottom: 30px;
     background: rgba(0, 0, 0, 0.7);
     color: #fff;
     width: 70%;
@@ -304,24 +502,67 @@ footer.mainfooter .innerBox address p i{
     }
 
 .ContactSec {
-    background: url('/wp-content/themes/SkipperMetzer/Images/Banner-photos/Bannermain.jpg')no-repeat bottom;
+    background: url('/wp-content/themes/SkipperMetzer/Images/Home-images/banner.png')no-repeat bottom;
     background-size: cover;
-    min-height:500px;
+    /*min-height:500px;*/
 }
     .ContactSec .overlay{
-        background-color:rgba(0,0,0,.6);
-        height:100vh;
+        /*background-color:rgba(0,0,0,.6);*/
+        /*height:100vh;*/
     }
-        .ContactSec .overlay h2 {
+        .ContactSec .overlay h1 {
             font-family: 'Pinyon Script', cursive;
             font-size:2.5rem;
         }
+            .ContactSec .overlay h1 span {
+                font-family: 'Pinyon Script', cursive;
+                font-size: 2.5rem;
+                border-bottom: 2px solid;
+            }
+        .ContactSec .overlay .ContactForm input.form-control,
+        .ContactSec .overlay .ContactForm textarea.form-control {
+            background: transparent;
+            border: none;
+            border-radius: 0;
+            color: #fff;
+            padding: 10px 0;
+            border-bottom: 2px solid #ffff;
+        }
+            .ContactSec .overlay .ContactForm input.form-control:focus,
+            .ContactSec .overlay .ContactForm textarea.form-control:focus {
+                outline: none;
+                box-shadow: 0 0 0 0 transparent;
+            }
 
+        .ContactSec .overlay .ContactForm ::-webkit-input-placeholder {
+            /* WebKit, Blink, Edge */
+            color: #fff !important;
+        }
 
+        .ContactSec .overlay .ContactForm :-moz-placeholder {
+            /* Mozilla Firefox 4 to 18 */
+            color: #fff !important;
+            opacity: 1;
+        }
 
-.addressSec .address {
-    margin: 0 20px 40px;
-}
+        .ContactSec .overlay .ContactForm ::-moz-placeholder {
+            /* Mozilla Firefox 19+ */
+            color: #fff !important;
+            opacity: 1;
+        }
+
+        .ContactSec .overlay .ContactForm :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #fff !important;
+        }
+
+        .ContactSec .overlay .ContactForm .btn{
+            border-radius:20px;
+        }
+
+        .addressSec .address {
+            margin: 0 20px 40px;
+        }
 
     .addressSec .address .address-content {
         padding: 20px;
@@ -367,30 +608,7 @@ footer.mainfooter .innerBox address p i{
                 top: -16px;
                 left: 1px;
             }
-
-    .addressSec .address .description {
-        font-size: 14px;
-        font-family: 'Mulish', sans-serif;
-        font-style: normal;
-        color: #8a8a8a;
-        line-height: 18px;
-        letter-spacing: .5px;
-        margin-bottom: 5px;
-        display: flex;
-        /* align-items: center; */
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-content: center;
-    }
-        .addressSec .address .description i {
-            color: #04275C;
-            font-size: 16px;
-            padding-top:2px;
-            padding-right: 10px;
-        }
-        }
-
-        .addressSec .address .title {
+        .addressSec .address .address-content h3.title {
             display: block;
             font-size: 18px;
             font-weight: 700;
@@ -399,6 +617,30 @@ footer.mainfooter .innerBox address p i{
             letter-spacing: 1px;
             margin: 0 0 5px 0;
         }
+
+        .addressSec .address .address-content .description {
+            font-size: 14px;
+            font-family: 'Mulish', sans-serif;
+            font-style: normal;
+            color: #8a8a8a;
+            line-height: 18px;
+            letter-spacing: .5px;
+            margin-bottom: 5px;
+            display: flex;
+            /* align-items: center; */
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-content: center;
+            word-break: break-all;
+        }
+            .addressSec .address .address-content .description i {
+                color: #04275C;
+                font-size: 16px;
+                padding-top: 2px;
+                padding-right: 10px;
+            }
+
+
 
     .addressSec .address .post {
         display: block;

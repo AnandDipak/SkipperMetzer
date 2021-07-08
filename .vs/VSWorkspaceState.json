@@ -2,9 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\wp-content",
+    "\\wp-content\\themes",
     "\\wp-content\\themes\\SkipperMetzer",
-    "\\wp-content\\themes\\SkipperMetzer\\Images"
+    "\\wp-content\\themes\\SkipperMetzer\\Css",
+    "\\wp-content\\themes\\SkipperMetzer\\Images",
+    "\\wp-content\\themes\\SkipperMetzer\\Images\\Banner-photos"
   ],
-  "SelectedNode": "\\wp-content",
   "PreviewInSolutionExplorer": false
 }
