@@ -191,7 +191,7 @@ footer.mainfooter .innerBox address p{
     align-items: flex-start;
     justify-content: center;
     align-content: stretch;
-    word-break:break-all;
+    word-break:break-word;
 }
 
 footer.mainfooter .innerBox address p i{
@@ -207,15 +207,28 @@ footer.mainfooter .innerBox address p i{
     background-size: cover;
 }
 
-    .amenities .overlay {
+    .amenities .overlay .small-icon-box {
         /*background-color: rgba(0,0,0,.6);*/
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        padding:10px;
     }
-        .amenities .overlay .makeCenter {
-            display: flex !important;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+
+        .amenities .overlay .small-icon-box .imgSec {
+            width: 40px;
+            height: 40px;
         }
+.amenities .overlay .makeCenter {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
             .amenities .overlay .makeCenter .circle {
                 border: 4px solid #fff;
                 border-radius: 50%;
@@ -423,6 +436,7 @@ footer.mainfooter .innerBox address p i{
     .testimonialsSec .testimonial .testimonial-content {
         padding: 35px 25px 35px 50px;
         margin-bottom: 35px;
+        min-height:190px;
         background: #fff;
         border: 1px solid #f0f0f0;
         position: relative;
@@ -567,6 +581,7 @@ footer.mainfooter .innerBox address p i{
     .addressSec .address .address-content {
         padding: 20px;
         margin-bottom: 35px;
+        min-height:234px;
         background: #fff;
         border: none;
         position: relative;
@@ -615,7 +630,7 @@ footer.mainfooter .innerBox address p i{
             color: #0AA4E4;
             text-transform: capitalize;
             letter-spacing: 1px;
-            margin: 0 0 5px 0;
+            margin: 0 0 16px 0;
         }
 
         .addressSec .address .address-content .description {
@@ -625,14 +640,17 @@ footer.mainfooter .innerBox address p i{
             color: #8a8a8a;
             line-height: 18px;
             letter-spacing: .5px;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
             display: flex;
             /* align-items: center; */
             flex-direction: row;
             flex-wrap: nowrap;
             align-content: center;
-            word-break: break-all;
+            word-break: break-word;
         }
+            .addressSec .address .address-content .description.desAdd {
+                min-height: 80px;
+            }
             .addressSec .address .address-content .description i {
                 color: #04275C;
                 font-size: 16px;
@@ -666,3 +684,48 @@ footer.mainfooter .innerBox address p i{
     .addressSec.addressSec .owl-theme .owl-controls.clickable .owl-page:hover span {
         background: #0AA4E4;
     }
+
+
+/* ==================================================== About Us Page ========================================================*/
+
+.topBanner {
+    position: relative;
+    background: url('https://ananddipak.github.io/SkipperMetzer/wp-content/themes/SkipperMetzer/Images/Banner-photos/topBanner.jpg')no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+    .topBanner h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight:700;
+    }
+
+.aboutUsDescription p.discription {
+    font-size:14px;
+    font-weight:500;
+    line-height:28px;
+}
+
+.promoters .youtubeVideo {
+    background: #04275C;
+    position: relative;
+    height: 100%;
+    min-height:450px
+}
+    .promoters .youtubeVideo h2{
+        font-size:2rem;
+        color:#fff;
+        padding:20px;
+    }
+    .promoters .youtubeVideo iframe {
+        position: absolute;
+        bottom: 48px;
+        padding: 15px;
+    }
+}
