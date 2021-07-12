@@ -75,7 +75,7 @@
                                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                                     <div class="navbar-nav ms-auto text-uppercase">
                                         <a class="nav-link active" aria-current="page" href="/">Home</a>
-                                        <a class="nav-link" href="#">About us</a>
+                                        <a class="nav-link" href="/about-us">About us</a>
                                         <a class="nav-link" href="#">Products</a>
                                         <a class="nav-link" href="#">Gallery</a>
                                         <a class="nav-link" href="#">Contact us</a>
