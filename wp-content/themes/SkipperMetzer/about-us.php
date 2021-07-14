@@ -7,7 +7,7 @@ Template Name: About us
 <html lang="en">
 
 <head>
-    <title>Skipper Metzer</title>
+    <title>Skipper Metzer | About Us</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -83,8 +83,8 @@ Template Name: About us
                                     <div class="navbar-nav ms-auto text-uppercase">
                                         <a class="nav-link "  href="/">Home</a>
                                         <a class="nav-link active" aria-current="page" href="/about-us">About us</a>
-                                        <a class="nav-link" href="#">Products</a>
-                                        <a class="nav-link" href="#">Gallery</a>
+                                        <a class="nav-link" href="/lin-light-flat-integral-dripper">Products</a>
+                                        <a class="nav-link" href="/gallery">Gallery</a>
                                         <a class="nav-link" href="#">Contact us</a>
                                         <a class="nav-link" href="#">
                                             <div id="google_translate_element"></div>
@@ -160,7 +160,7 @@ Template Name: About us
                         <div class="col-md-7 mt-5">
                             <img src="/wp-content/themes/SkipperMetzer/Images/Logo-photo/meterz.png" alt="" class="w-25"/>
                             <p class="mt-3"  style="color:#04275C"><strong>www.metzer-group.com</strong></p>
-                            <p class="mt-5">
+                            <p class="discription mt-5">
                                 M/s Metzerplas, Israel, which was established in 1970, is long standing global group dedicated to 
                                 developing and manufacturing high quality Micro Irrigation Systems, Drippers, Drip Manufacturing
                                 -lines, PE conduction pipes for water, wastewater and gas, reduced-friction communication pipes, 
@@ -192,7 +192,7 @@ Template Name: About us
                         <div class="col-md-7 mt-5 pt-5">
                             <img src="/wp-content/themes/SkipperMetzer/Images/Logo-photo/skipper.png" alt="" class="w-25"/>
                             <p class="mt-3" style="color:#04275C"><strong>www.skipperlimited.com</strong></p>
-                            <p class="mt-5">
+                            <p class="discription mt-5">
                                 M/s Skipper Ltd, which was established in 1981, has today evolved into one of the world's leading 
                                 manufacturers for Transmission & Distribution Structures (Towers & Poles) in its Engineering 
                                 Products segment, a leading and respected brand in the Plastic Water Pipes sector as well as 
@@ -225,7 +225,7 @@ Template Name: About us
                         <div class="col-md-12 mt-5">
                             <div class="">
                                 <div class="">
-                                    <p>
+                                    <p class="discription">
                                         At the outset I would like to thank you for taking interest in Skipper Metzer India LLP.
                                         Water is the one of the necessary inputs for sustainable agriculture & food production across the globe. Currently the world is facing major challenge of optimum 
                                         use of the available water resources. The global water sources are fast depleting, creating an alarming demand - supply gap. Secondly, the inefficient use of water 
@@ -266,10 +266,10 @@ Template Name: About us
                             <h4>Useful Links</h4>
                             <ul>
                                 <li><a href="/">Home</a></li>
-                                <li><a href="/">About Us </a></li>
-                                <li><a href="/">Products</a></li>
-                                <li><a href="/">Gallery</a></li>
-                                <li><a href="/">Contact Us</a></li>
+                                <li><a href="/about-us">About Us </a></li>
+                                <li><a href="/lin-light-flat-integral-dripper">Products</a></li>
+                                <li><a href="/gallery">Gallery</a></li>
+                                <li><a href="/contact-us">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -281,7 +281,7 @@ Template Name: About us
                                     <ul>
                                         <li><a href="/">LIN</a></li>
                                         <li><a href="/">Vardit Pc Dripper </a></li>
-                                        <li><a href="/"> Adi</a></li>
+                                        <li><a href="/">Adi</a></li>
                                         <li><a href="/">Compact </a></li>
                                         <li><a href="/">Online Drippers </a></li>
                                         <li><a href="/">Brass Sprinklers </a></li>
@@ -340,7 +340,14 @@ Template Name: About us
                         </div>
                     </div>
                     <div class="col-md-4">
-
+                        <div class="innerBox">
+                            <div class="social-icons">
+                                <div class="social-icon"><i class="fab fa-facebook-f"></i></div>
+                                <div class="social-icon"><i class="fab fa-twitter"></i></div>
+                                <div class="social-icon"><i class="fab fa-instagram"></i></div>
+                                <div class="social-icon"><i class="far fa-envelope"></i></div>
+                            </div>
+                        </div
                     </div>
                 </div>
             </div>

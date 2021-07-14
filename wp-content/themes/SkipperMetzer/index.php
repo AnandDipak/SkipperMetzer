@@ -9,7 +9,7 @@
 
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="/wp-content/themes/SkipperMetzer/Css/Style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f3aebf1c73.js" crossorigin="anonymous"></script>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
@@ -58,6 +58,372 @@
 
 
     </style>
+    <style>
+        .timeline {
+            position: relative;
+            padding: 0;
+            list-style: none
+        }
+
+            .timeline:before {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 40px;
+                width: 4px;
+                margin-left: -1.5px;
+                content: '';
+                background-color: #e9ecef
+            }
+
+            .timeline > li {
+                position: relative;
+                min-height: 50px;
+                /*margin-bottom: 50px*/
+            }
+
+                .timeline > li:after, .timeline > li:before {
+                    display: table;
+                    content: ' '
+                }
+
+                .timeline > li:after {
+                    clear: both
+                }
+
+                .timeline > li .timeline-panel {
+                    position: relative;
+                    float: right;
+                    width: 100%;
+                    padding: 0 20px 0 100px;
+                    text-align: left
+                }
+
+                    .timeline > li .timeline-panel:before {
+                        right: auto;
+                        left: -15px;
+                        border-right-width: 15px;
+                        border-left-width: 0
+                    }
+
+                    .timeline > li .timeline-panel:after {
+                        right: auto;
+                        left: -14px;
+                        border-right-width: 14px;
+                        border-left-width: 0
+                    }
+
+                .timeline > li .timeline-image {
+                    position: absolute;
+                    z-index: 100;
+                    left: 0;
+                    width: 80px;
+                    height: 80px;
+                    margin-left: 0;
+                    text-align: center;
+                    color: #fff;
+                    border: 5px solid #D1D1D1;
+                    border-radius: 100%;
+                    background-color: #fff;
+                }
+                .timeline > li:hover .timeline-image {
+                    background-color: #04275C !important;
+                }
+
+                .timeline > li .first_timeline-image {
+                    position: absolute;
+                    z-index: 100;
+                    left: 0;
+                    width: 80px;
+                    height: 80px;
+                    margin-left: 0;
+                    text-align: center;
+                    color: #fff;
+                    border: 5px solid #D1D1D1;
+                    border-radius: 100%;
+                    /*background-color: #04275C !important;*/
+                }
+
+                .timeline > li .timeline-image h4 {
+                    font-size: 10px;
+                    line-height: 14px;
+                    margin-top: 12px
+                }
+
+                .timeline > li.timeline-inverted > .timeline-panel {
+                    float: right;
+                    padding: 0 20px 0 100px;
+                    text-align: left
+                }
+
+                    .timeline > li.timeline-inverted > .timeline-panel:before {
+                        right: auto;
+                        left: -15px;
+                        border-right-width: 15px;
+                        border-left-width: 0
+                    }
+
+                    .timeline > li.timeline-inverted > .timeline-panel:after {
+                        right: auto;
+                        left: -14px;
+                        border-right-width: 14px;
+                        border-left-width: 0
+                    }
+
+                .timeline > li:last-child {
+                    margin-bottom: 0;
+                    min-height: 0px;
+                }
+
+            .timeline .timeline-heading h4 {
+                margin-top: -10px !important;
+                color: inherit;
+                font-size: 1.5rem;
+                color: #0AA4E4;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+                .timeline .timeline-heading h4.subheading {
+                    text-transform: none;
+                    font-size: 26px !important;
+                    line-height: 55px !important;
+                    color: #525252 !important;
+                    font-family: 'Montserrat', sans-serif;
+                }
+
+            .timeline .timeline-body > p, .timeline .timeline-body > ul {
+                margin-bottom: 0
+            }
+
+        @media (min-width:768px) {
+        
+            .timeline:before {
+                left: 50%
+            }
+
+            .timeline > li {
+                min-height: 100px;
+                /*margin-bottom: 100px*/
+            }
+
+                .timeline > li .timeline-panel {
+                    float: left;
+                    width: 47%;
+                    padding: 0 20px 20px 30px;
+                    text-align: right
+                }
+
+                .timeline > li .timeline-image {
+                    left: 50%;
+                    width: 25px;
+                    height: 25px;
+                    margin-left: -13px
+                }
+
+                    .timeline > li .timeline-image h4 {
+                        font-size: 13px;
+                        line-height: 18px;
+                        margin-top: 16px
+                    }
+
+                .timeline > li.timeline-inverted > .timeline-panel {
+                    float: right;
+                    padding: 0 30px 20px 20px;
+                    text-align: left
+                }
+        }
+
+        @media (min-width:992px) {
+            .timeline > li {
+                min-height: 100px
+            }
+
+                .timeline > li .timeline-panel {
+                    padding: 0 20px 20px
+                }
+
+                .timeline > li .timeline-image {
+                    width: 25px;
+                    height: 25px;
+                    margin-left: -13px
+                }
+
+                    .timeline > li .timeline-image h4 {
+                        font-size: 18px;
+                        line-height: 26px;
+                        margin-top: 30px
+                    }
+
+                .timeline > li.timeline-inverted > .timeline-panel {
+                    padding: 0 20px 20px
+                }
+        }
+
+        @media (min-width:1200px) {
+            .timeline > li {
+                min-height: 100px
+            }
+
+                .timeline > li .timeline-panel {
+                    margin-top: -52px;
+                   /* padding: 0 0px 20px 20px    */
+                }
+
+                .timeline > li .timeline-image {
+                    width: 25px;
+                    height: 25px;
+                    margin-left: -13px;
+                }
+        }
+
+        .timeline > li .timeline-image h4 {
+            margin-top: 40px
+        }
+
+        .timeline > li.timeline-inverted > .timeline-panel {
+          /*  padding: 0 100px 20px 20px    */
+        }
+
+
+
+        .team-member {
+            margin-bottom: 50px;
+            text-align: center
+        }
+
+            .team-member img {
+                width: 225px;
+                height: 225px;
+                border: 7px solid rgba(0,0,0,.1)
+            }
+
+            .team-member h4 {
+                margin-top: 25px;
+                margin-bottom: 0;
+                text-transform: none
+            }
+
+            .team-member p {
+                margin-top: 0
+            }
+
+        .section-heading {
+            font-size: 36px;
+            line-height: 56px;
+            color: #14265B;
+        }
+
+        .cap_image {
+            margin-top: -50px;
+            margin-bottom: -30px !important;
+        }
+
+        .process_img1 {
+            margin-top: -40px;
+        }
+
+        .process_img {
+            margin-top: -40px;
+        }
+
+        .process_img {
+            margin-top: -40px;
+        }
+
+        hr {
+            margin-top: -2px;
+        }
+
+        @media (max-width:768px) {
+            .timeline > li .timeline-image {
+                display: none !important;
+            }
+
+            .timeline > li .first_timeline-image {
+                position: absolute;
+                z-index: 100;
+                left: 0;
+                width: 20px;
+                height: 20px;
+                margin-left: 0;
+                text-align: center;
+                color: #fff;
+                border: 5px solid #D1D1D1;
+                border-radius: 100%;
+                background-color: #000000 !important;
+            }
+
+            .timeline > li .timeline-image {
+                width: 20px;
+                height: 20px;
+                margin-left: -13px;
+            }
+
+            .timeline:before {
+                /*position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -4px;
+        width: 4px;
+        margin-left: -1.5px;
+        content: '';
+        background-color: #e9ecef;*/
+                display: none !important;
+            }
+
+            .timeline > li .timeline-panel {
+                position: relative;
+                float: right;
+                width: 100%;
+                padding: 0px 20px 0 10px;
+                text-align: left;
+            }
+
+            .timeline > li.timeline-inverted > .timeline-panel {
+                padding: 0 10px 20px 20px;
+            }
+
+
+            .rpl_text {
+                margin-left: 10px !important;
+            }
+
+            .timeline .timeline-heading h4.subheading {
+                text-transform: none;
+                font-size: 18px !important;
+                line-height: 17px !important;
+                color: #525252 !important;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            .cap_image {
+                margin-top: -30px;
+                margin-left: -30px;
+                width: 200px;
+                height: 160px;
+            }
+
+            .timeline > li {
+                min-height: 0px !important;
+                margin-bottom: 30px;
+            }
+
+            .timeline .timeline-heading h4 {
+                margin-top: 10px !important;
+            }
+
+            .process_img1 {
+                width: 100px;
+                margin-top: 15px;
+            }
+
+            .process_img {
+                width: 100px;
+                margin-left: -40px;
+                margin-top: 15px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -76,8 +442,8 @@
                                     <div class="navbar-nav ms-auto text-uppercase">
                                         <a class="nav-link active" aria-current="page" href="/">Home</a>
                                         <a class="nav-link" href="/about-us">About us</a>
-                                        <a class="nav-link" href="#">Products</a>
-                                        <a class="nav-link" href="#">Gallery</a>
+                                        <a class="nav-link" href="/lin-light-flat-integral-dripper">Products</a>
+                                        <a class="nav-link" href="/gallery">Gallery</a>
                                         <a class="nav-link" href="#">Contact us</a>
                                         <a class="nav-link" href="#">
                                             <div id="google_translate_element"></div>
@@ -102,7 +468,106 @@
                     </div>
                 </footer>
             </section>
-            <section class="dripIrregationSystem mt-5 mb-5" id="dripIrregationSystem">
+            <section class="page-section dripIrregationSystem mt-5 pt-5 pb-5" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2 class="h2Title">Pamper your plants with <span>Drip Irrigation System</span></h2>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-lg-12">
+                            <ul class="timeline mt-5">
+                                <li>
+                                    <div class="timeline-image">
+                                        <img class="rounded-circle">
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="boxInnerRight">
+                                            <img src="/wp-content/themes/SkipperMetzer/Images/Home-images/Ellipse-11.png" alt="" class="imgFix">
+                                            <div class="boxInnerDescription">
+                                                <h2>Step 1</h2>
+                                                <p>Plan the Drip irrigation system</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted">
+                                    <div class="timeline-image">
+                                        <img class="rounded-circle" alt="">
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="boxInnerLeft">
+                                            <div class="boxInnerDescription">
+                                                <h2>Step 2</h2>
+                                                <p>Begin at the Outside Faucet</p>
+                                            </div>
+                                            <img src="/wp-content/themes/SkipperMetzer/Images/Home-images/Ellipse-21.png" alt="" class="imgFix">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timeline-image">
+                                        <img class="rounded-circle ">
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <div class="boxInnerRight">
+                                                <img src="/wp-content/themes/SkipperMetzer/Images/Home-images/Ellipse-22.png" alt="" class="imgFix">
+                                                <div class="boxInnerDescription">
+                                                    <h2>Step 3</h2>
+                                                    <p>Install the Fittings</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted">
+                                    <div class="timeline-image">
+                                        <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="" class="imgFix">
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <div class="boxInnerLeft">
+                                                <div class="boxInnerDescription">
+                                                    <h2>Step 4</h2>
+                                                    <p>Install the Drip-System Watering Device</p>
+                                                </div>
+                                                <img src="/wp-content/themes/SkipperMetzer/Images/Home-images/Ellipse-23.png" alt="" class="imgFix">
+                                            </div>
+                                        </div>
+                                  
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timeline-image">
+                                        <img class="rounded-circle ">
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <div class="boxInnerRight">
+                                                <img src="/wp-content/themes/SkipperMetzer/Images/Home-images/Ellipse-24.png" alt="" class="imgFix">
+                                                <div class="boxInnerDescription">
+                                                    <h2>Step 5</h2>
+                                                    <p>Maintaining Your Drip Irrigation System</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timeline-image first_timeline-image">
+                                        <img class="rounded-circle">
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- <section class="dripIrregationSystem mt-5 mb-5" id="dripIrregationSystem">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 text-center">
@@ -170,7 +635,7 @@
                         <div class="col-md-6"></div>
                     </div>
                 </div>  
-            </section>
+            </section> -->
             <section class="amenities mt-5">
                 <div class="overlay">
                     <div class="container-fluid">
@@ -179,25 +644,25 @@
                             <div class="col-md-4"></div>
                             <div class="col-md-4">
                                 <div class="row">
-                                    <div class="col-sm-3">
+                                    <div class="col-sm-3  col-3">
                                         <div class="small-icon-box">
                                             <img src="wp-content/themes/SkipperMetzer/Images/Sectors-photo/noun_crops.png" alt="" class=" imgSec"/>
                                             <img src="wp-content/themes/SkipperMetzer/Images/Sectors-photo/Row_Crops.png" alt="" class=""/>
                                         </div>
                                     </div>
-                                    <div class="col-sm-3">
+                                    <div class="col-sm-3  col-3">
                                         <div class="small-icon-box">
                                             <img src="wp-content/themes/SkipperMetzer/Images/Sectors-photo/noun_orchard.png" alt="" class=" imgSec"/>
                                             <img src="wp-content/themes/SkipperMetzer/Images/Sectors-photo/Orchards.png" alt="" class=""/>
                                         </div>
                                     </div>
-                                    <div class="col-sm-3">
+                                    <div class="col-sm-3  col-3">
                                         <div class="small-icon-box">
                                             <img src="wp-content/themes/SkipperMetzer/Images/Sectors-photo/noun_green_house.png" alt="" class=" imgSec"/>
                                             <img src="wp-content/themes/SkipperMetzer/Images/Sectors-photo/Greenhouses.png" alt="" class=""/>
                                         </div>
                                     </div>
-                                    <div class="col-sm-3">
+                                    <div class="col-sm-3  col-3">
                                         <div class="small-icon-box">
                                             <img src="wp-content/themes/SkipperMetzer/Images/Sectors-photo/noun_land.png" alt="" class=" imgSec"/>
                                             <img src="wp-content/themes/SkipperMetzer/Images/Sectors-photo/landScaping.png" alt="" class=""/>
@@ -209,24 +674,24 @@
                     </div>
                     <div class="container pb-5 ">
                         <div class="row">
-                            <div class="col-md-4">
-                                <div class="p-5 makeCenter">
+                            <div class="col-md-4 col-sm-4 col-4">
+                                <div class=" makeCenter">
                                     <div class="circle">
                                         <i class="far fa-clock"></i>
                                     </div>
                                     <p class="text-white mt-3" >Save Time</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="p-5 makeCenter">
+                            <div class="col-md-4 col-sm-4 col-4">
+                                <div class=" makeCenter">
                                     <div class="circle">
                                         <i class="fas fa-hand-holding-water"></i>
                                     </div>
                                     <p class="text-white mt-3" >Save Water</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="p-5 makeCenter">
+                            <div class="col-md-4 col-sm-4 col-4">
+                                <div class=" makeCenter">
                                     <div class="circle">
                                         <i class="fas fa-coins"></i>
                                     </div>
@@ -316,7 +781,7 @@
             <section class="viewSector mt-5">
                <div class="container-fluid">
                    <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-6 col-12 mt-3">
                             <div class="rowCrops">
                                 <div class="innerField">
                                 <div class="angl"></div>
@@ -324,7 +789,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-6 col-12 mt-3">
                             <div class="orchards">
                                 <div class="innerField">
                                     <div class="angl"></div>
@@ -332,7 +797,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-6 col-12 mt-3">
                             <div class="greenHouses">
                                 <div class="innerField">
                                 <div class="angl"></div>
@@ -340,7 +805,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-6 col-12 mt-3">
                             <div class="landScaping">
                                 <div class="innerField">
                                 <div class="angl"></div>
@@ -366,7 +831,7 @@
                             Skipper Metzer is led by experienced team members with more than two and half 
                             decades of experience in Micro Irrigation...
                             </p>
-                            <a href="#" class="btn readmoreBtn mt-5">Read More<i class="fas fa-long-arrow-alt-right ms-3"></i></a>
+                            <a href="/about-us" class="btn readmoreBtn mt-5">Read More<i class="fas fa-long-arrow-alt-right ms-3"></i></a>
                         </div>
                     </div>
                 </div>
@@ -617,10 +1082,10 @@
                             <h4>Useful Links</h4>
                             <ul>
                                 <li><a href="/">Home</a></li>
-                                <li><a href="/">About Us </a></li>
-                                <li><a href="/">Products</a></li>
-                                <li><a href="/">Gallery</a></li>
-                                <li><a href="/">Contact Us</a></li>
+                                <li><a href="/about-us">About Us </a></li>
+                                <li><a href="/lin-light-flat-integral-dripper">Products</a></li>
+                                <li><a href="/gallery">Gallery</a></li>
+                                <li><a href="/contact-us">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -632,7 +1097,7 @@
                                     <ul>
                                         <li><a href="/">LIN</a></li>
                                         <li><a href="/">Vardit Pc Dripper </a></li>
-                                        <li><a href="/"> Adi</a></li>
+                                        <li><a href="/">Adi</a></li>
                                         <li><a href="/">Compact </a></li>
                                         <li><a href="/">Online Drippers </a></li>
                                         <li><a href="/">Brass Sprinklers </a></li>
@@ -691,7 +1156,14 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-
+                        <div class="innerBox">
+                            <div class="social-icons">
+                                <div class="social-icon"><i class="fab fa-facebook-f"></i></div>
+                                <div class="social-icon"><i class="fab fa-twitter"></i></div>
+                                <div class="social-icon"><i class="fab fa-instagram"></i></div>
+                                <div class="social-icon"><i class="far fa-envelope"></i></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
