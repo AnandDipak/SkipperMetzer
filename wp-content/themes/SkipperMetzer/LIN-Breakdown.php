@@ -168,9 +168,9 @@ Template Name:  LIN Breakdown
         <footer class="mainfooter mt-5">
             <div class="container-fluid">
                 <div class="row ">
-                    <div class="col-md-3 ">
+                    <div class="col-md-3 rightB">
                         <div class="innerBox">
-                            <img src="/wp-content/themes/SkipperMetzer/Images/Logo-photo/flags.png" alt="" class="img-fluid" style="max-width:260px" />
+                            <img src="/wp-content/themes/SkipperMetzer/Images/Logo-photo/ind-israel_logo.png" alt="" class="img-responsive" style="max-width:260px" />
                             <p><strong>Skipper Metzer India LLP</strong> is an Indo-Israeli joint venture between M/s Skipper Limited, India
                                 and M/s Metzer, Israel, to foray into Micro Irrigation
                                 market in India with an objective to become a key
@@ -179,7 +179,7 @@ Template Name:  LIN Breakdown
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-2 ">
+                    <div class="col-md-2 rightB">
                         <div class="innerBox">
                             <h4>Useful Links</h4>
                             <ul>
@@ -191,7 +191,7 @@ Template Name:  LIN Breakdown
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-4 ">
+                    <div class="col-md-4 rightB">
                         <div class="innerBox">
                             <h4>Our Products</h4>
                             <div class="row">
@@ -223,7 +223,7 @@ Template Name:  LIN Breakdown
 
                         </div>
                     </div>
-                    <div class="col-md-3 ">
+                    <div class="col-md-3 rightB">
                         <div class="innerBox">
                             <h4>Contact Us</h4>
                             <address>
@@ -265,12 +265,18 @@ Template Name:  LIN Breakdown
                                 <div class="social-icon"><i class="fab fa-instagram"></i></div>
                                 <div class="social-icon"><i class="far fa-envelope"></i></div>
                             </div>
-                        </div
+                        </div>
                     </div>
                 </div>
             </div>
         </footer>
-
+        <div class="container-fluid">
+            <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p style="font-size:14px;" class="p-2">Copyright 2021 Skipper Metzer, Designed & Developed by Annamraju Designs & Technologies</p>
+                    </div>
+                </div>
+        </div>
     </div>
 
 

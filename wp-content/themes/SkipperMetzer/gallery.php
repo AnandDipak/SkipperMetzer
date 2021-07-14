@@ -83,9 +83,9 @@ Template Name: Gallery
                                     <div class="navbar-nav ms-auto text-uppercase">
                                         <a class="nav-link "  href="/">Home</a>
                                         <a class="nav-link " href="/about-us">About us</a>
-                                        <a class="nav-link" href="#">Products</a>
+                                        <a class="nav-link" href="/lin-light-flat-integral-dripper">Products</a>
                                         <a class="nav-link active" aria-current="page" href="/gallery">Gallery</a>
-                                        <a class="nav-link" href="#">Contact us</a>
+                                        <a class="nav-link" href="/contact-us">Contact us</a>
                                         <a class="nav-link" href="#">
                                             <div id="google_translate_element"></div>
                                         </a>
@@ -106,8 +106,8 @@ Template Name: Gallery
                     <div class="row">
                         <div class="col-md-12 ">
                             <div class="p-4 text-center">
-                                <button type="button" class="btn btnActive" onclick="getImage()" id="imageBtn">IMAGES</button>
-                                <button type="button" class="btn bthDeactive" onclick="getBrochuers()"id="brouchersBtn">BROCHURES</button>
+                                <button type="button" class="btn btnActive" onclick="getImages()" id="imageBtn">IMAGES</button>
+                                <button type="button" class="btn bthDeactive" onclick="getBrouchers()" id="brouchersBtn">BROCHURES</button>
                             </div>
                         </div>
                     </div>
@@ -159,14 +159,13 @@ Template Name: Gallery
                     </div>
                 </div>  
             </section>
-           
         </main>
         <footer class="mainfooter mt-5">
             <div class="container-fluid">
                 <div class="row ">
-                    <div class="col-md-3 ">
+                    <div class="col-md-3 rightB">
                         <div class="innerBox">
-                            <img src="/wp-content/themes/SkipperMetzer/Images/Logo-photo/flags.png" alt="" class="img-fluid" style="max-width:260px" />
+                            <img src="/wp-content/themes/SkipperMetzer/Images/Logo-photo/ind-israel_logo.png" alt="" class="img-responsive" style="max-width:260px" />
                             <p><strong>Skipper Metzer India LLP</strong> is an Indo-Israeli joint venture between M/s Skipper Limited, India
                                 and M/s Metzer, Israel, to foray into Micro Irrigation
                                 market in India with an objective to become a key
@@ -175,7 +174,7 @@ Template Name: Gallery
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-2 ">
+                    <div class="col-md-2 rightB">
                         <div class="innerBox">
                             <h4>Useful Links</h4>
                             <ul>
@@ -187,7 +186,7 @@ Template Name: Gallery
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-4 ">
+                    <div class="col-md-4 rightB">
                         <div class="innerBox">
                             <h4>Our Products</h4>
                             <div class="row">
@@ -219,7 +218,7 @@ Template Name: Gallery
 
                         </div>
                     </div>
-                    <div class="col-md-3 ">
+                    <div class="col-md-3 rightB">
                         <div class="innerBox">
                             <h4>Contact Us</h4>
                             <address>
@@ -261,12 +260,18 @@ Template Name: Gallery
                                 <div class="social-icon"><i class="fab fa-instagram"></i></div>
                                 <div class="social-icon"><i class="far fa-envelope"></i></div>
                             </div>
-                        </div
+                        </div>
                     </div>
                 </div>
             </div>
         </footer>
-
+        <div class="container-fluid">
+            <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p style="font-size:14px;" class="p-2">Copyright 2021 Skipper Metzer, Designed & Developed by Annamraju Designs & Technologies</p>
+                    </div>
+                </div>
+        </div>
     </div>
 
 
@@ -275,7 +280,28 @@ Template Name: Gallery
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>    
-
+     <script type="text/javascript">
+          $(function(){
+               $("#brochuers").hide();
+                
+          }); 
+          function getImages(){
+               $('#brouchersBtn').removeClass("btnActive");
+               $('#brouchersBtn').addClass("bthDeactive");
+               $('#imageBtn').removeClass("bthDeactive");
+               $('#imageBtn').addClass("btnActive");
+               $("#images").show();
+               $("#brochuers").hide();
+          }  
+          function getBrouchers(){
+               $('#imageBtn').removeClass("btnActive");
+               $('#imageBtn').addClass("bthDeactive");
+               $('#brouchersBtn').removeClass("bthDeactive");
+               $('#brouchersBtn').addClass("btnActive");
+               $("#brochuers").show();                        
+               $("#images").hide();
+           }
+     </script>
 </body>
 
 </html>

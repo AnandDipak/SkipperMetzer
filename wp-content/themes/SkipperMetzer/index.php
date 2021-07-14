@@ -55,8 +55,6 @@
         .goog-te-menu-value span:nth-child(5) {
             display: none;
         }
-
-
     </style>
     <style>
         .timeline {
@@ -444,7 +442,7 @@
                                         <a class="nav-link" href="/about-us">About us</a>
                                         <a class="nav-link" href="/lin-light-flat-integral-dripper">Products</a>
                                         <a class="nav-link" href="/gallery">Gallery</a>
-                                        <a class="nav-link" href="#">Contact us</a>
+                                        <a class="nav-link" href="/contact-us">Contact us</a>
                                         <a class="nav-link" href="#">
                                             <div id="google_translate_element"></div>
                                         </a>
@@ -463,7 +461,7 @@
                 <a href="#dripIrregationSystem" class="text-white fs-5"><i class="fas fa-angle-double-down"></i></a>
                 <footer class="bannerFooter">
                     <div class="footerbox">
-                        <img src="/wp-content/themes/SkipperMetzer/Images/Logo-photo/flags.png" alt="" class="img-responsive" style="max-width:100px">
+                        <img src="/wp-content/themes/SkipperMetzer/Images/Logo-photo/ind-israel_logo.png" alt="" class="img-responsive" style="max-width:100px">
                         <p class="ps-2">AN-INDO ISRAELI JOINT VENTURE SMART IRRIGATION SOLUTIONS</p>
                     </div>
                 </footer>
@@ -702,14 +700,14 @@
                     </div>
                 </div>
             </section>
-            <section class="productSec mt-5 mb-5">
+            <section class="productSec mt-5 mb-5" id="dripIrregationSystem">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-3">
                            <div class="poductBox">
                                 <h4>Advanced Durable</h4><h4>& Reliable Smart</h4>
-                                <p>Irrigation Technologies</p>
-                                <a href="#" class="btn readmoreBtn mt-5 text-white">Read More<i class="fas fa-long-arrow-alt-right ms-3"></i></a>
+                                <p style="line-height:18px;letter-spacing:3px;">Irrigation Technologies</p>
+                                <a href="/lin-light-flat-integral-dripper" class="btn readmoreBtn mt-5 text-white">Read More<i class="fas fa-long-arrow-alt-right ms-3"></i></a>
                            </div>
                         </div>
                         <div class="col-md-9">
@@ -874,7 +872,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <section class="testimonialsSec mt-5">
                 <div class="demo">
                     <div class="container">
@@ -928,9 +926,9 @@
                             <div class="col-md-6 mt-5">
                                 <div class="p-5">
                                     <h1 class="text-white"><span>Leave</span> me message</h2>
-                                    <p class="text-white mt-5">Lorem ipsum dolor sit amet, consectetur 
-                                        adipiscing elit. Quis a lectus 
-                                        risus arcu. Sit morbi
+                                    <p class="text-white mt-5">
+                                    We are eager to discuss your business needs, </br>
+                                    And answer any questions you may have
                                     </p>
                                 </div>
                             </div>
@@ -1066,9 +1064,9 @@
         <footer class="mainfooter mt-5">
             <div class="container-fluid">
                 <div class="row ">
-                    <div class="col-md-3 ">
+                    <div class="col-md-3 rightB">
                         <div class="innerBox">
-                            <img src="/wp-content/themes/SkipperMetzer/Images/Logo-photo/flags.png" alt="" class="img-responsive" style="max-width:260px" />
+                            <img src="/wp-content/themes/SkipperMetzer/Images/Logo-photo/ind-israel_logo.png" alt="" class="img-responsive" style="max-width:260px" />
                             <p><strong>Skipper Metzer India LLP</strong> is an Indo-Israeli joint venture between M/s Skipper Limited, India
                                 and M/s Metzer, Israel, to foray into Micro Irrigation
                                 market in India with an objective to become a key
@@ -1077,7 +1075,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-2 ">
+                    <div class="col-md-2 rightB">
                         <div class="innerBox">
                             <h4>Useful Links</h4>
                             <ul>
@@ -1089,7 +1087,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-4 ">
+                    <div class="col-md-4 rightB">
                         <div class="innerBox">
                             <h4>Our Products</h4>
                             <div class="row">
@@ -1121,7 +1119,7 @@
 
                         </div>
                     </div>
-                    <div class="col-md-3 ">
+                    <div class="col-md-3 rightB">
                         <div class="innerBox">
                             <h4>Contact Us</h4>
                             <address>
@@ -1168,7 +1166,13 @@
                 </div>
             </div>
         </footer>
-
+        <div class="container-fluid">
+            <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p style="font-size:14px;" class="p-2">Copyright 2021 Skipper Metzer, Designed & Developed by Annamraju Designs & Technologies</p>
+                    </div>
+                </div>
+        </div>
     </div>
 
 
