@@ -17,8 +17,13 @@ Template Name: Gallery
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="/wp-content/themes/SkipperMetzer/Css/Style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f3aebf1c73.js" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="/wp-content/themes/SkipperMetzer/LightboxSlider/gallery.js"></script>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/wp-content/themes/SkipperMetzer/LightboxSlider/gallery.min.css" media="screen" />
     <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
@@ -61,16 +66,16 @@ Template Name: Gallery
             display: none;
         }
 
-         body{
-              background:#ffffff;
-         }
+        body {
+            background: #ffffff;
+        }
     </style>
 </head>
 
 <body>
     <div class="wrapper">
         <header class="bg-white mainNav">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
                         <nav class="navbar navbar-expand-lg navbar-light bg-white">
@@ -81,7 +86,7 @@ Template Name: Gallery
                                 </button>
                                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                                     <div class="navbar-nav ms-auto text-uppercase">
-                                        <a class="nav-link "  href="/">Home</a>
+                                        <a class="nav-link " href="/">Home</a>
                                         <a class="nav-link " href="/about-us">About us</a>
                                         <a class="nav-link" href="/lin-light-flat-integral-dripper">Products</a>
                                         <a class="nav-link active" aria-current="page" href="/gallery">Gallery</a>
@@ -89,6 +94,7 @@ Template Name: Gallery
                                         <a class="nav-link" href="#">
                                             <div id="google_translate_element"></div>
                                         </a>
+                                        <a class="nav-link" href="tel:+9118005722997">Toll Free: 1800 572 2997</a>
                                     </div>
                                 </div>
                             </div>
@@ -99,9 +105,11 @@ Template Name: Gallery
         </header>
         <main>
             <section class="topBanner">
-                <h1 class="text-white mt-3 text-uppercase">Gallery</h1>
+                <div class="center-items" style=" background: #ffffffb3;width: 400px; text-align:center">
+                    <h1 class=" mt-2 text-uppercase p-5">Gallery</h1>
+                </div>
             </section>
-            <section class="gallery mt-5 mb-5" >
+            <section class="gallery mt-5 mb-5">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12 ">
@@ -111,53 +119,43 @@ Template Name: Gallery
                             </div>
                         </div>
                     </div>
-                    <div class="row images" id="images">
-                        <div class="col-md-4 mt-3">
+                    <div class="row Gallery images" id="images"></div>
+                    <!-- <div class="row images " id="images">
+                        <div class="col-md-6 mt-3">
                             <img src="/wp-content/themes/SkipperMetzer/Images/Gallery/ein_zivan_grapes.jpg" alt="" class="img-fluid">
                         </div>
-                        <div class="col-md-4 mt-3">
-                            <img src="/wp-content/themes/SkipperMetzer/Images/Gallery/ein_zivan_pears_adi.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-md-4 mt-3">
-                            <img src="/wp-content/themes/SkipperMetzer/Images/Gallery/metzer_banana_adi.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-md-4 mt-3">
+                        <div class="col-md-6 mt-3">
                             <img src="/wp-content/themes/SkipperMetzer/Images/Gallery/mizra_corn.jpg" alt="" class="img-fluid">
                         </div>
-                        <div class="col-md-4 mt-3">
+                        <div class="col-md-3 mt-3">
+                            <img src="/wp-content/themes/SkipperMetzer/Images/Gallery/ein_zivan_pears_adi.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-3 mt-3">
+                            <img src="/wp-content/themes/SkipperMetzer/Images/Gallery/metzer_banana_adi.jpg" alt="" class="img-fluid">
+                        </div>
+
+                        <div class="col-md-3 mt-3">
                             <img src="/wp-content/themes/SkipperMetzer/Images/Gallery/qvat_onion_minilin.jpg" alt="" class="img-fluid">
                         </div>
-                        <div class="col-md-4 mt-3">
+                        <div class="col-md-3 mt-3">
                             <img src="/wp-content/themes/SkipperMetzer/Images/Gallery/sheluchot_palm_tree_adi.jpg" alt="" class="img-fluid">
                         </div>
-                    </div>
+                    </div> -->
                     <div class="row brochuers" id="brochuers">
-                        <div class="col-md-3 mt-3">
-                            <img src="/wp-content/themes/SkipperMetzer/Images/Brochures/sk-1.jpg" alt="" class="img-fluid">
+                        <div class="col-md-4 mt-3 text-center">
+                            <h2>English</h2>
+                            <a href="/gallery/broucher-english-page"><img src="/wp-content/themes/SkipperMetzer/Images/Brochures/ENGLISH-1.jpg" alt="" class="img-fluid"></a>
                         </div>
-                        <div class="col-md-3 mt-3">
-                            <img src="/wp-content/themes/SkipperMetzer/Images/Brochures/sk-2.jpg" alt="" class="img-fluid">
+                        <div class="col-md-4 mt-3 text-center">
+                            <h2>Marathi</h2>
+                            <a href="/gallery/broucher-marathi-page"><img src="/wp-content/themes/SkipperMetzer/Images/Brochures/MARATHI-5.jpg" alt="" class="img-fluid"></a>
                         </div>
-                        <div class="col-md-3 mt-3">
-                            <img src="/wp-content/themes/SkipperMetzer/Images/Brochures/sk-3.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-md-3 mt-3">
-                            <img src="/wp-content/themes/SkipperMetzer/Images/Brochures/sk-4.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-md-3 mt-3">
-                            <img src="/wp-content/themes/SkipperMetzer/Images/Brochures/English/sk-e-1.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-md-3 mt-3">
-                            <img src="/wp-content/themes/SkipperMetzer/Images/Brochures/English/sk-e-2.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-md-3 mt-3">
-                            <img src="/wp-content/themes/SkipperMetzer/Images/Brochures/English/sk-e-3.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-md-3 mt-3">
-                            <img src="/wp-content/themes/SkipperMetzer/Images/Brochures/English/sk-e-4.jpg" alt="" class="img-fluid">
+                        <div class="col-md-4 mt-3 text-center">
+                            <h2>Telugu</h2>
+                            <a href="/gallery/broucher-telugu-page"><img src="/wp-content/themes/SkipperMetzer/Images/Brochures/TELUGU-1.jpg" alt="" class="img-fluid"></a>
                         </div>
                     </div>
-                </div>  
+                </div>
             </section>
         </main>
         <footer class="mainfooter mt-5">
@@ -267,41 +265,94 @@ Template Name: Gallery
         </footer>
         <div class="container-fluid">
             <div class="row">
-                    <div class="col-md-12 text-center">
-                        <p style="font-size:14px;" class="p-2">Copyright 2021 Skipper Metzer, Designed & Developed by Annamraju Designs & Technologies</p>
-                    </div>
+                <div class="col-md-12 text-center">
+                    <p style="font-size:14px;" class="p-2">Copyright 2021 Skipper Metzer, Designed & Developed by Annamraju Designs & Technologies</p>
                 </div>
+            </div>
         </div>
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>    
-     <script type="text/javascript">
-          $(function(){
-               $("#brochuers").hide();
-                
-          }); 
-          function getImages(){
-               $('#brouchersBtn').removeClass("btnActive");
-               $('#brouchersBtn').addClass("bthDeactive");
-               $('#imageBtn').removeClass("bthDeactive");
-               $('#imageBtn').addClass("btnActive");
-               $("#images").show();
-               $("#brochuers").hide();
-          }  
-          function getBrouchers(){
-               $('#imageBtn').removeClass("btnActive");
-               $('#imageBtn').addClass("bthDeactive");
-               $('#brouchersBtn').removeClass("bthDeactive");
-               $('#brouchersBtn').addClass("btnActive");
-               $("#brochuers").show();                        
-               $("#images").hide();
-           }
-     </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#brochuers").hide();
+
+        });
+
+        function getImages() {
+            $('#brouchersBtn').removeClass("btnActive");
+            $('#brouchersBtn').addClass("bthDeactive");
+            $('#imageBtn').removeClass("bthDeactive");
+            $('#imageBtn').addClass("btnActive");
+            $("#images").show();
+            $("#brochuers").hide();
+        }
+
+        function getBrouchers() {
+            $('#imageBtn').removeClass("btnActive");
+            $('#imageBtn').addClass("bthDeactive");
+            $('#brouchersBtn').removeClass("bthDeactive");
+            $('#brouchersBtn').addClass("btnActive");
+            $("#brochuers").show();
+            $("#images").hide();
+        }
+    </script>
+    <script>
+        /*
+         * For every Day/Project a new "addGallery"
+         */
+
+        setGalleryTransition("slideAndZoom");
+        enableExtraButtons();
+        //backgroundColor("#000000f7");
+        //setGalleryStyle("mosaic");
+        //enableAutoWidth();
+        json = '{ "Entry": { "Title": "", ' +
+            '"Image": ["/wp-content/themes/SkipperMetzer/Images/Gallery/ein_zivan_grapes.jpg",' +
+            '"/wp-content/themes/SkipperMetzer/Images/Gallery/mizra_corn.jpg",' +
+            '"/wp-content/themes/SkipperMetzer/Images/Gallery/ein_zivan_pears_adi.jpg",' +
+            '"/wp-content/themes/SkipperMetzer/Images/Gallery/metzer_banana_adi.jpg",' +
+            '"/wp-content/themes/SkipperMetzer/Images/Gallery/qvat_onion_minilin.jpg",' +
+            '"/wp-content/themes/SkipperMetzer/Images/Gallery/sheluchot_palm_tree_adi.jpg" ] } }';
+        addGallery(json);
+    </script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <script>
+        try {
+            fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", {
+                method: 'HEAD',
+                mode: 'no-cors'
+            })).then(function(response) {
+                return true;
+            }).catch(function(e) {
+                var carbonScript = document.createElement("script");
+                carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+                carbonScript.id = "_carbonads_js";
+                document.getElementById("carbon-block").appendChild(carbonScript);
+            });
+        } catch (error) {
+            console.log(error);
+        }
+    </script>
 </body>
 
 </html>

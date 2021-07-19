@@ -70,12 +70,12 @@ Template Name:  LIN Breakdown
 <body>
     <div class="wrapper">
         <header class="bg-white mainNav">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
                         <nav class="navbar navbar-expand-lg navbar-light bg-white">
                             <div class="container-fluid">
-                                <a class="navbar-brand" href="#"><img src="/wp-content/themes/SkipperMetzer/Images/Logo-photo/logo.png" alt="Skipper Metzer" style="width: 120px;"></a>
+                                <a class="navbar-brand" href="#"><img src="/wp-content/themes/SkipperMetzer/Images/Logo-photo/skipper-metzer-logo.png" alt="Skipper Metzer" style="width: 120px;"></a>
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
@@ -89,6 +89,7 @@ Template Name:  LIN Breakdown
                                         <a class="nav-link" href="#">
                                             <div id="google_translate_element"></div>
                                         </a>
+                                        <a class="nav-link" href="tel:+9118005722997">Toll Free: 1800 572 2997</a>
                                     </div>
                                 </div>
                             </div>

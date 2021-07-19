@@ -12,8 +12,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="/wp-content/themes/SkipperMetzer/Css/Style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f3aebf1c73.js" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
     <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
@@ -63,223 +63,226 @@
             list-style: none
         }
 
-            .timeline:before {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 40px;
-                width: 4px;
-                margin-left: -1.5px;
-                content: '';
-                background-color: #e9ecef
-            }
+        .timeline:before {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 40px;
+            width: 4px;
+            margin-left: -1.5px;
+            content: '';
+            background-color: #e9ecef
+        }
 
-            .timeline > li {
-                position: relative;
-                min-height: 50px;
-                /*margin-bottom: 50px*/
-            }
+        .timeline>li {
+            position: relative;
+            min-height: 50px;
+            /*margin-bottom: 50px*/
+        }
 
-                .timeline > li:after, .timeline > li:before {
-                    display: table;
-                    content: ' '
-                }
+        .timeline>li:after,
+        .timeline>li:before {
+            display: table;
+            content: ' '
+        }
 
-                .timeline > li:after {
-                    clear: both
-                }
+        .timeline>li:after {
+            clear: both
+        }
 
-                .timeline > li .timeline-panel {
-                    position: relative;
-                    float: right;
-                    width: 100%;
-                    padding: 0 20px 0 100px;
-                    text-align: left
-                }
+        .timeline>li .timeline-panel {
+            position: relative;
+            float: right;
+            width: 100%;
+            padding: 0 20px 0 100px;
+            text-align: left
+        }
 
-                    .timeline > li .timeline-panel:before {
-                        right: auto;
-                        left: -15px;
-                        border-right-width: 15px;
-                        border-left-width: 0
-                    }
+        .timeline>li .timeline-panel:before {
+            right: auto;
+            left: -15px;
+            border-right-width: 15px;
+            border-left-width: 0
+        }
 
-                    .timeline > li .timeline-panel:after {
-                        right: auto;
-                        left: -14px;
-                        border-right-width: 14px;
-                        border-left-width: 0
-                    }
+        .timeline>li .timeline-panel:after {
+            right: auto;
+            left: -14px;
+            border-right-width: 14px;
+            border-left-width: 0
+        }
 
-                .timeline > li .timeline-image {
-                    position: absolute;
-                    z-index: 100;
-                    left: 0;
-                    width: 80px;
-                    height: 80px;
-                    margin-left: 0;
-                    text-align: center;
-                    color: #fff;
-                    border: 5px solid #D1D1D1;
-                    border-radius: 100%;
-                    background-color: #fff;
-                }
-                .timeline > li:hover .timeline-image {
-                    background-color: #04275C !important;
-                }
+        .timeline>li .timeline-image {
+            position: absolute;
+            z-index: 100;
+            left: 0;
+            width: 80px;
+            height: 80px;
+            margin-left: 0;
+            text-align: center;
+            color: #fff;
+            border: 5px solid #D1D1D1;
+            border-radius: 100%;
+            background-color: #fff;
+        }
 
-                .timeline > li .first_timeline-image {
-                    position: absolute;
-                    z-index: 100;
-                    left: 0;
-                    width: 80px;
-                    height: 80px;
-                    margin-left: 0;
-                    text-align: center;
-                    color: #fff;
-                    border: 5px solid #D1D1D1;
-                    border-radius: 100%;
-                    /*background-color: #04275C !important;*/
-                }
+        .timeline>li:hover .timeline-image {
+            background-color: #04275C !important;
+        }
 
-                .timeline > li .timeline-image h4 {
-                    font-size: 10px;
-                    line-height: 14px;
-                    margin-top: 12px
-                }
+        .timeline>li .first_timeline-image {
+            position: absolute;
+            z-index: 100;
+            left: 0;
+            width: 80px;
+            height: 80px;
+            margin-left: 0;
+            text-align: center;
+            color: #fff;
+            border: 5px solid #D1D1D1;
+            border-radius: 100%;
+            /*background-color: #04275C !important;*/
+        }
 
-                .timeline > li.timeline-inverted > .timeline-panel {
-                    float: right;
-                    padding: 0 20px 0 100px;
-                    text-align: left
-                }
+        .timeline>li .timeline-image h4 {
+            font-size: 10px;
+            line-height: 14px;
+            margin-top: 12px
+        }
 
-                    .timeline > li.timeline-inverted > .timeline-panel:before {
-                        right: auto;
-                        left: -15px;
-                        border-right-width: 15px;
-                        border-left-width: 0
-                    }
+        .timeline>li.timeline-inverted>.timeline-panel {
+            float: right;
+            padding: 0 20px 0 100px;
+            text-align: left
+        }
 
-                    .timeline > li.timeline-inverted > .timeline-panel:after {
-                        right: auto;
-                        left: -14px;
-                        border-right-width: 14px;
-                        border-left-width: 0
-                    }
+        .timeline>li.timeline-inverted>.timeline-panel:before {
+            right: auto;
+            left: -15px;
+            border-right-width: 15px;
+            border-left-width: 0
+        }
 
-                .timeline > li:last-child {
-                    margin-bottom: 0;
-                    min-height: 0px;
-                }
+        .timeline>li.timeline-inverted>.timeline-panel:after {
+            right: auto;
+            left: -14px;
+            border-right-width: 14px;
+            border-left-width: 0
+        }
 
-            .timeline .timeline-heading h4 {
-                margin-top: -10px !important;
-                color: inherit;
-                font-size: 1.5rem;
-                color: #0AA4E4;
-                font-family: 'Montserrat', sans-serif;
-            }
+        .timeline>li:last-child {
+            margin-bottom: 0;
+            min-height: 0px;
+        }
 
-                .timeline .timeline-heading h4.subheading {
-                    text-transform: none;
-                    font-size: 26px !important;
-                    line-height: 55px !important;
-                    color: #525252 !important;
-                    font-family: 'Montserrat', sans-serif;
-                }
+        .timeline .timeline-heading h4 {
+            margin-top: -10px !important;
+            color: inherit;
+            font-size: 1.5rem;
+            color: #0AA4E4;
+            font-family: 'Montserrat', sans-serif;
+        }
 
-            .timeline .timeline-body > p, .timeline .timeline-body > ul {
-                margin-bottom: 0
-            }
+        .timeline .timeline-heading h4.subheading {
+            text-transform: none;
+            font-size: 26px !important;
+            line-height: 55px !important;
+            color: #525252 !important;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .timeline .timeline-body>p,
+        .timeline .timeline-body>ul {
+            margin-bottom: 0
+        }
 
         @media (min-width:768px) {
-        
+
             .timeline:before {
                 left: 50%
             }
 
-            .timeline > li {
+            .timeline>li {
                 min-height: 100px;
                 /*margin-bottom: 100px*/
             }
 
-                .timeline > li .timeline-panel {
-                    float: left;
-                    width: 47%;
-                    padding: 0 20px 20px 30px;
-                    text-align: right
-                }
+            .timeline>li .timeline-panel {
+                float: left;
+                width: 47%;
+                padding: 0 20px 20px 30px;
+                text-align: right
+            }
 
-                .timeline > li .timeline-image {
-                    left: 50%;
-                    width: 25px;
-                    height: 25px;
-                    margin-left: -13px
-                }
+            .timeline>li .timeline-image {
+                left: 50%;
+                width: 25px;
+                height: 25px;
+                margin-left: -13px
+            }
 
-                    .timeline > li .timeline-image h4 {
-                        font-size: 13px;
-                        line-height: 18px;
-                        margin-top: 16px
-                    }
+            .timeline>li .timeline-image h4 {
+                font-size: 13px;
+                line-height: 18px;
+                margin-top: 16px
+            }
 
-                .timeline > li.timeline-inverted > .timeline-panel {
-                    float: right;
-                    padding: 0 30px 20px 20px;
-                    text-align: left
-                }
+            .timeline>li.timeline-inverted>.timeline-panel {
+                float: right;
+                padding: 0 30px 20px 20px;
+                text-align: left
+            }
         }
 
         @media (min-width:992px) {
-            .timeline > li {
+            .timeline>li {
                 min-height: 100px
             }
 
-                .timeline > li .timeline-panel {
-                    padding: 0 20px 20px
-                }
+            .timeline>li .timeline-panel {
+                padding: 0 20px 20px
+            }
 
-                .timeline > li .timeline-image {
-                    width: 25px;
-                    height: 25px;
-                    margin-left: -13px
-                }
+            .timeline>li .timeline-image {
+                width: 25px;
+                height: 25px;
+                margin-left: -13px
+            }
 
-                    .timeline > li .timeline-image h4 {
-                        font-size: 18px;
-                        line-height: 26px;
-                        margin-top: 30px
-                    }
+            .timeline>li .timeline-image h4 {
+                font-size: 18px;
+                line-height: 26px;
+                margin-top: 30px
+            }
 
-                .timeline > li.timeline-inverted > .timeline-panel {
-                    padding: 0 20px 20px
-                }
+            .timeline>li.timeline-inverted>.timeline-panel {
+                padding: 0 20px 20px
+            }
         }
 
         @media (min-width:1200px) {
-            .timeline > li {
+            .timeline>li {
                 min-height: 100px
             }
 
-                .timeline > li .timeline-panel {
-                    margin-top: -52px;
-                   /* padding: 0 0px 20px 20px    */
-                }
+            .timeline>li .timeline-panel {
+                margin-top: -52px;
+                /* padding: 0 0px 20px 20px    */
+            }
 
-                .timeline > li .timeline-image {
-                    width: 25px;
-                    height: 25px;
-                    margin-left: -13px;
-                }
+            .timeline>li .timeline-image {
+                width: 25px;
+                height: 25px;
+                margin-left: -13px;
+            }
         }
 
-        .timeline > li .timeline-image h4 {
+        .timeline>li .timeline-image h4 {
             margin-top: 40px
         }
 
-        .timeline > li.timeline-inverted > .timeline-panel {
-          /*  padding: 0 100px 20px 20px    */
+        .timeline>li.timeline-inverted>.timeline-panel {
+            /*  padding: 0 100px 20px 20px    */
         }
 
 
@@ -289,21 +292,21 @@
             text-align: center
         }
 
-            .team-member img {
-                width: 225px;
-                height: 225px;
-                border: 7px solid rgba(0,0,0,.1)
-            }
+        .team-member img {
+            width: 225px;
+            height: 225px;
+            border: 7px solid rgba(0, 0, 0, .1)
+        }
 
-            .team-member h4 {
-                margin-top: 25px;
-                margin-bottom: 0;
-                text-transform: none
-            }
+        .team-member h4 {
+            margin-top: 25px;
+            margin-bottom: 0;
+            text-transform: none
+        }
 
-            .team-member p {
-                margin-top: 0
-            }
+        .team-member p {
+            margin-top: 0
+        }
 
         .section-heading {
             font-size: 36px;
@@ -333,11 +336,11 @@
         }
 
         @media (max-width:768px) {
-            .timeline > li .timeline-image {
+            .timeline>li .timeline-image {
                 display: none !important;
             }
 
-            .timeline > li .first_timeline-image {
+            .timeline>li .first_timeline-image {
                 position: absolute;
                 z-index: 100;
                 left: 0;
@@ -351,7 +354,7 @@
                 background-color: #000000 !important;
             }
 
-            .timeline > li .timeline-image {
+            .timeline>li .timeline-image {
                 width: 20px;
                 height: 20px;
                 margin-left: -13px;
@@ -369,7 +372,7 @@
                 display: none !important;
             }
 
-            .timeline > li .timeline-panel {
+            .timeline>li .timeline-panel {
                 position: relative;
                 float: right;
                 width: 100%;
@@ -377,7 +380,7 @@
                 text-align: left;
             }
 
-            .timeline > li.timeline-inverted > .timeline-panel {
+            .timeline>li.timeline-inverted>.timeline-panel {
                 padding: 0 10px 20px 20px;
             }
 
@@ -401,7 +404,7 @@
                 height: 160px;
             }
 
-            .timeline > li {
+            .timeline>li {
                 min-height: 0px !important;
                 margin-bottom: 30px;
             }
@@ -427,12 +430,12 @@
 <body>
     <div class="wrapper">
         <header class="bg-white mainNav">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
                         <nav class="navbar navbar-expand-lg navbar-light bg-white">
                             <div class="container-fluid">
-                                <a class="navbar-brand" href="#"><img src="/wp-content/themes/SkipperMetzer/Images/Logo-photo/logo.png" alt="Skipper Metzer" style="width: 120px;"></a>
+                                <a class="navbar-brand" href="#"><img src="/wp-content/themes/SkipperMetzer/Images/Logo-photo/skipper-metzer-logo.png" alt="Skipper Metzer" style="width: 120px;"></a>
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
@@ -446,6 +449,7 @@
                                         <a class="nav-link" href="#">
                                             <div id="google_translate_element"></div>
                                         </a>
+                                        <a class="nav-link" href="tel:+9118005722997">Toll Free: 1800 572 2997</a>
                                     </div>
                                 </div>
                             </div>
@@ -456,17 +460,60 @@
         </header>
         <main>
             <section class="mainBanner">
-                <img src="/wp-content/themes/SkipperMetzer/Images/Logo-photo/logo.png" alt="" class="img-responsive w-25 logo">
-                <h1 class="text-white mt-3">Micro Irrigation Solutions</h1>
-                <a href="#dripIrregationSystem" class="text-white fs-5"><i class="fas fa-angle-double-down"></i></a>
+                <center>
+                    <div class="center-items" style=" background: #ffffffb3;width: 350px; margin-top: 45%;">
+                        <img src="/wp-content/themes/SkipperMetzer/Images/Logo-photo/skipper-metzer-logo.png" alt="" class="img-responsive w-100 p-5">
+                    </div>
+                    <a href="#dripIrregationSystem" class="text-white fs-5"><i class="fas fa-angle-double-down"></i></a>
+                </center>
+                <!--<h1 class="text-white mt-3">Micro Irrigation Solutions</h1>-->
+                
                 <footer class="bannerFooter">
                     <div class="footerbox">
                         <img src="/wp-content/themes/SkipperMetzer/Images/Logo-photo/ind-israel_logo.png" alt="" class="img-responsive" style="max-width:100px">
-                        <p class="ps-2">AN-INDO ISRAELI JOINT VENTURE SMART IRRIGATION SOLUTIONS</p>
+                        <p class="ps-2">AN-INDO ISRAELI JOINT VENTURE </p>
                     </div>
                 </footer>
             </section>
-            <section class="page-section dripIrregationSystem mt-5 pt-5 pb-5" id="about">
+            <section class="viewSector mt-5">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-12 mt-3">
+                            <div class="rowCrops">
+                                <div class="innerField">
+                                    <div class="angl"></div>
+                                    <h4>Row Crops</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-12 mt-3">
+                            <div class="orchards">
+                                <div class="innerField">
+                                    <div class="angl"></div>
+                                    <h4>Orchards</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-12 mt-3">
+                            <div class="greenHouses">
+                                <div class="innerField">
+                                    <div class="angl"></div>
+                                    <h4>Green Houses</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-12 mt-3">
+                            <div class="landScaping">
+                                <div class="innerField">
+                                    <div class="angl"></div>
+                                    <h4>Land Scaping</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- <section class="page-section dripIrregationSystem mt-5 pt-5 pb-5" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 text-center">
@@ -564,7 +611,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <!-- <section class="dripIrregationSystem mt-5 mb-5" id="dripIrregationSystem">
                 <div class="container">
                     <div class="row">
@@ -636,7 +683,7 @@
             </section> -->
             <section class="amenities mt-5">
                 <div class="overlay">
-                    <div class="container-fluid">
+                    <!-- <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-4"></div>
                             <div class="col-md-4"></div>
@@ -669,15 +716,15 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="container pb-5 ">
+                    </div> -->
+                    <div class="container pb-5 pt-5 ">
                         <div class="row">
                             <div class="col-md-4 col-sm-4 col-4">
                                 <div class=" makeCenter">
                                     <div class="circle">
                                         <i class="far fa-clock"></i>
                                     </div>
-                                    <p class="text-white mt-3" >Save Time</p>
+                                    <p class="text-white mt-3">Save Time</p>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-4 col-4">
@@ -685,7 +732,7 @@
                                     <div class="circle">
                                         <i class="fas fa-hand-holding-water"></i>
                                     </div>
-                                    <p class="text-white mt-3" >Save Water</p>
+                                    <p class="text-white mt-3">Save Water</p>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-4 col-4">
@@ -693,7 +740,7 @@
                                     <div class="circle">
                                         <i class="fas fa-coins"></i>
                                     </div>
-                                    <p class="text-white mt-3" >Save Money</p>
+                                    <p class="text-white mt-3">Save Money</p>
                                 </div>
                             </div>
                         </div>
@@ -704,11 +751,12 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-3">
-                           <div class="poductBox">
-                                <h4>Advanced Durable</h4><h4>& Reliable Smart</h4>
+                            <div class="poductBox">
+                                <h4>Advanced Durable</h4>
+                                <h4>& Reliable Smart</h4>
                                 <p style="line-height:18px;letter-spacing:3px;">Irrigation Technologies</p>
                                 <a href="/lin-light-flat-integral-dripper" class="btn readmoreBtn mt-5 text-white">Read More<i class="fas fa-long-arrow-alt-right ms-3"></i></a>
-                           </div>
+                            </div>
                         </div>
                         <div class="col-md-9">
                             <div class="demo">
@@ -718,52 +766,52 @@
                                             <div id="product-slider" class="owl-carousel">
                                                 <div class="product">
                                                     <div class="product-content">
-                                                        <p class="description text-center">
-                                                            <img src="/wp-content/themes/SkipperMetzer/Images/Home-images/lin-1.png" alt"" />
+                                                        <p class="my-4  text-center">
+                                                            <img src="/wp-content/themes/SkipperMetzer/Images/Products/Lin_product.png" alt"" />
                                                         </p>
                                                         <h2 class="description mt-3">
-                                                                LIN Light Flat Integral Dripper
+                                                            LIN Light Flat Integral Dripper
                                                         </h2>
                                                         <p class="description mt-3">
-                                                               Multi-Purpose Integral Dripper
+                                                            Multi-Purpose Integral Dripper
                                                         </p>
                                                         <p class="description mt-3">
-                                                               Versatile, Seasonal or Multi-Seasonal use, according to dripline specifications
+                                                            Versatile, Seasonal or Multi-Seasonal use, according to dripline specifications
                                                         </p>
                                                     </div>
                                                 </div>
                                                 <div class="product">
                                                     <div class="product-content">
-                                                        <p class="description text-center">
-                                                            <img src="/wp-content/themes/SkipperMetzer/Images/Home-images/Super_Compact_036-1.png" alt"" />
+                                                        <p class="my-4 text-center">
+                                                            <img src="/wp-content/themes/SkipperMetzer/Images/Products/super-compact-3.png" alt"" />
                                                         </p>
                                                         <h2 class="description mt-3">
-                                                               COMPACT Cylindrical Compact Integral Dripper
+                                                            COMPACT Cylindrical Compact Integral Dripper
                                                         </h2>
                                                         <p class="description mt-3">
-                                                               Multi-Purpose Integral Dripper
+                                                            Multi-Purpose Integral Dripper
                                                         </p>
                                                         <p class="description mt-3">
-                                                               Cylindrical Dripper Advantages, at an Economical cost 
+                                                            Cylindrical Dripper Advantages, at an Economical cost
                                                         </p>
                                                     </div>
                                                 </div>
                                                 <div class="product">
                                                     <div class="product-content">
-                                                        <p class="description text-center">
-                                                            <img src="/wp-content/themes/SkipperMetzer/Images/Home-images/On-line-Dripper-PC-Gali-1.png" alt"" />
+                                                        <p class="my-4 text-center">
+                                                            <img src="/wp-content/themes/SkipperMetzer/Images/Products/gali_2.png" alt"" />
                                                         </p>
                                                         <h2 class="description mt-3">
-                                                                Online Drippers
+                                                            Online Drippers
                                                         </h2>
                                                         <p class="description mt-3">
-                                                               Non - Drain Option
+                                                            Non - Drain Option
                                                         </p>
                                                         <p class="description mt-3">
-                                                                Non Drain system: The dripline remains full
-                                                                of water  during irrigation intervals, ensuring
-                                                                immediate and uniform irrigation along the
-                                                                dripline.
+                                                            Non Drain system: The dripline remains full
+                                                            of water during irrigation intervals, ensuring
+                                                            immediate and uniform irrigation along the
+                                                            dripline.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -776,65 +824,28 @@
                     </div>
                 </div>
             </section>
-            <section class="viewSector mt-5">
-               <div class="container-fluid">
-                   <div class="row">
-                        <div class="col-md-3 col-sm-6 col-12 mt-3">
-                            <div class="rowCrops">
-                                <div class="innerField">
-                                <div class="angl"></div>
-                                    <h4>Row Crops</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-12 mt-3">
-                            <div class="orchards">
-                                <div class="innerField">
-                                    <div class="angl"></div>
-                                    <h4>Orchards</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-12 mt-3">
-                            <div class="greenHouses">
-                                <div class="innerField">
-                                <div class="angl"></div>
-                                    <h4>Green Houses</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-12 mt-3">
-                            <div class="landScaping">
-                                <div class="innerField">
-                                <div class="angl"></div>
-                                    <h4>Land Scaping</h4>
-                                </div>
-                            </div>
-                        </div>
-                   </div>
-               </div>
-            </section>
+
             <section class="aboutUSback mt-5">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 text-center py-5">
                             <h2 class="text-white h2Title mb-5">About <span>Us</span></h2>
-                            <p class="mt-5">Skipper Metzer India LLP is an Indo-Israeli joint venture between M/s Skipper 
-                            Limited, India and M/s Metzer, Israel, to foray into Micro Irrigation market in India with 
-                            an objective to become a key player and bring in new technologies in the growing 
-                            irrigation market to help farmers.
+                            <p class="mt-5">Skipper Metzer India LLP is an Indo-Israeli joint venture between M/s Skipper
+                                Limited, India and M/s Metzer, Israel, to foray into Micro Irrigation market in India with
+                                an objective to become a key player and bring in new technologies in the growing
+                                irrigation market to help farmers.
 
-                            Skipper Metzer Head Office and production facilities with state of the art “Israeli 
-                            Technologies” are located in Hyderabad.
-                            Skipper Metzer is led by experienced team members with more than two and half 
-                            decades of experience in Micro Irrigation...
+                                Skipper Metzer Head Office and production facilities with state of the art “Israeli
+                                Technologies” are located in Hyderabad.
+                                Skipper Metzer is led by experienced team members with more than two and half
+                                decades of experience in Micro Irrigation...
                             </p>
                             <a href="/about-us" class="btn readmoreBtn mt-5">Read More<i class="fas fa-long-arrow-alt-right ms-3"></i></a>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="blogs pt-5 pb-5">
+            <!-- <section class="blogs pt-5 pb-5">
                 <div class="container ">
                     <div class="row">
                         <div class="col-md-12 text-center">
@@ -872,13 +883,13 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <section class="testimonialsSec mt-5">
                 <div class="demo">
                     <div class="container">
                         <div class="row mt-5 mb-5">
                             <div class="col-md-12 text-center">
-                                 <h2 class="h2Title">Our <span>Testimonials</span></h2>
+                                <h2 class="h2Title">Our <span>Testimonials</span></h2>
                             </div>
                         </div>
                         <div class="row mt-5">
@@ -890,24 +901,24 @@
                                                 <i class="fa fa-quote-left"></i>
                                             </div>
                                             <p class="description">
-                                               Smart Irrigation equipments manufacturing..</br>
-                                               Israel technology..
+                                                Smart Irrigation equipments manufacturing..</br>
+                                                Israel technology..
                                             </p>
                                         </div>
                                         <h3 class="title">Sri Badhrinath</h3>
                                     </div>
- 
+
                                     <div class="testimonial">
                                         <div class="testimonial-content">
                                             <div class="testimonial-icon">
                                                 <i class="fa fa-quote-left"></i>
                                             </div>
                                             <p class="description">
-                                                A true Indo-Israeli Joint Venture into Micro 
-                                                Irrigation business meeting the irrigation 
-                                                needs of Indian farmers.  State of the art 
-                                                facility with latest technology and good 
-                                                connectivity for leading market locations 
+                                                A true Indo-Israeli Joint Venture into Micro
+                                                Irrigation business meeting the irrigation
+                                                needs of Indian farmers. State of the art
+                                                facility with latest technology and good
+                                                connectivity for leading market locations
                                                 for this industry.
                                             </p>
                                         </div>
@@ -926,15 +937,15 @@
                             <div class="col-md-6 mt-5">
                                 <div class="p-5">
                                     <h1 class="text-white"><span>Leave</span> me message</h2>
-                                    <p class="text-white mt-5">
-                                    We are eager to discuss your business needs, </br>
-                                    And answer any questions you may have
-                                    </p>
+                                        <p class="text-white mt-5">
+                                            We are eager to discuss your business needs, </br>
+                                            And answer any questions you may have
+                                        </p>
                                 </div>
                             </div>
                             <div class="col-md-6 mt-5">
                                 <div class="p-5">
-                                    <form class="ContactForm" id="ContactForm">
+                                    <form class="ContactForm" id="ContactForm" method="post">
                                         <div class="row">
                                             <div class="col-md-12 mb-5">
                                                 <input type="text" name="name" id="name" class="form-control" placeholder="Name" />
@@ -943,18 +954,22 @@
                                                 <input type="email" name="email" id="email" class="form-control" placeholder="Email" />
                                             </div>
                                             <div class="col-md-6 mb-5">
-                                                <input type="text" name="contact" id="contact" class="form-control" placeholder="Phone Number" />
+                                                <input type="text" name="phoneno" id="phoneno" class="form-control" placeholder="Phone Number" />
                                             </div>
                                             <div class="col-md-12 mb-5">
-                                                <textarea id="message" name="message" class="form-control" placeholder="Message" ></textarea> 
+                                                <textarea id="message" name="message" class="form-control" placeholder="Message"></textarea>
                                             </div>
                                             <div class="col-md-12 mb-5">
                                                 <input type="submit" value="Submit" class="btn bg-white w-100">
                                             </div>
+                                            <div class="col-md-12 mb-5">
+                                                <div class="response_msg text-white"></div>
+                                                <img src="/wp-content/themes/Skippermetzer/images/loading.gif" id="loading-img" style="display:none;">
+                                            </div>
                                         </div>
                                     </form>
                                 </div>
-                            </div>                
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -964,7 +979,7 @@
                     <div class="container-fluid">
                         <div class="row mt-5 ">
                             <div class="col-md-12 text-center">
-                                 <h2 class="h2Title">Our <span>Locations</span></h2>
+                                <h2 class="h2Title">Our <span>Locations</span></h2>
                             </div>
                         </div>
                         <div class="row mt-5">
@@ -973,13 +988,13 @@
                                     <div class="address">
                                         <div class="address-content">
                                             <h3 class="title">Anantapur Office</h3>
-                                            
+
                                             <p class="description desAdd">
                                                 <i class="fas fa-map-marker-alt"></i>
                                                 Door No. 2/208-2,
-                                                Opp. Ayurvedic 
+                                                Opp. Ayurvedic
                                                 Hospital, 2nd road,
-                                                Anantapur- 
+                                                Anantapur-
                                                 515001, Andhra Pradesh
                                             </p>
                                             <p class="description">
@@ -995,12 +1010,12 @@
                                     <div class="address">
                                         <div class="address-content">
                                             <h3 class="title">Kurnool</h3>
-                                            
+
                                             <p class="description desAdd">
                                                 <i class="fas fa-map-marker-alt"></i>
                                                 H. No. 18/961,Telecom Nagar,
                                                 Near Bishop Church,
-                                                Kurnool – 
+                                                Kurnool –
                                                 518001, Andhra Pradesh
                                             </p>
                                             <p class="description">
@@ -1016,12 +1031,12 @@
                                     <div class="address">
                                         <div class="address-content">
                                             <h3 class="title">Chittoor </h3>
-                                            
+
                                             <p class="description desAdd">
                                                 <i class="fas fa-map-marker-alt"></i>
                                                 H. No. 3-3-10,Padagamanu Street,
                                                 Greamspet,
-                                                Chittoor – 517002, 
+                                                Chittoor – 517002,
                                                 Andhra Pradesh
                                             </p>
                                             <p class="description">
@@ -1037,7 +1052,7 @@
                                     <div class="address">
                                         <div class="address-content">
                                             <h3 class="title">Kadapa</h3>
-                                            
+
                                             <p class="description desAdd">
                                                 <i class="fas fa-map-marker-alt"></i>
                                                 Door No. 43/26-1-1,
@@ -1168,10 +1183,10 @@
         </footer>
         <div class="container-fluid">
             <div class="row">
-                    <div class="col-md-12 text-center">
-                        <p style="font-size:14px;" class="p-2">Copyright 2021 Skipper Metzer, Designed & Developed by Annamraju Designs & Technologies</p>
-                    </div>
+                <div class="col-md-12 text-center">
+                    <p style="font-size:14px;" class="p-2">Copyright 2021 Skipper Metzer, Designed & Developed by Annamraju Designs & Technologies</p>
                 </div>
+            </div>
         </div>
     </div>
 
@@ -1180,51 +1195,72 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>    
-         <script type="text/javascript">
-         $(function() {
-              $('a[href="dripIrregationSystem"]').on('click', function(e) {
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('a[href="dripIrregationSystem"]').on('click', function(e) {
                 e.preventDefault();
-                $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-              });
-            });
-          $(document).ready(function(){
-          
-            $("#product-slider").owlCarousel({
-                items:3,
-                itemsDesktop:[1000,3],
-                itemsDesktopSmall:[980,3],
-                itemsTablet:[768,2],
-                itemsMobile:[650,1],
-                pagination:true,
-                navigation:false,
-                slideSpeed:1000,
-                autoPlay:true
-            });
-            $("#testimonial-slider").owlCarousel({
-                items:2,
-                itemsDesktop:[1000,3],
-                itemsDesktopSmall:[980,2],
-                itemsTablet:[768,2],
-                itemsMobile:[650,1],
-                pagination:true,
-                navigation:false,
-                slideSpeed:1000,
-                autoPlay:true
-            });
-            $("#address-slider").owlCarousel({
-                items:4,
-                itemsDesktop:[1000,4],
-                itemsDesktopSmall:[980,3],
-                itemsTablet:[768,2],
-                itemsMobile:[650,1],
-                pagination:true,
-                navigation:false,
-                slideSpeed:1000,
-                autoPlay:true
+                $('html, body').animate({
+                    scrollTop: $($(this).attr('href')).offset().top
+                }, 500, 'linear');
             });
         });
-         </script>
+        $(document).ready(function() {
+
+            $("#product-slider").owlCarousel({
+                items: 3,
+                itemsDesktop: [1000, 3],
+                itemsDesktopSmall: [980, 3],
+                itemsTablet: [768, 2],
+                itemsMobile: [650, 1],
+                pagination: true,
+                navigation: false,
+                slideSpeed: 1000,
+                autoPlay: true
+            });
+            $("#testimonial-slider").owlCarousel({
+                items: 2,
+                itemsDesktop: [1000, 3],
+                itemsDesktopSmall: [980, 2],
+                itemsTablet: [768, 2],
+                itemsMobile: [650, 1],
+                pagination: true,
+                navigation: false,
+                slideSpeed: 1000,
+                autoPlay: true
+            });
+            $("#address-slider").owlCarousel({
+                items: 4,
+                itemsDesktop: [1000, 4],
+                itemsDesktopSmall: [980, 3],
+                itemsTablet: [768, 2],
+                itemsMobile: [650, 1],
+                pagination: true,
+                navigation: false,
+                slideSpeed: 1000,
+                autoPlay: true
+            });
+        });
+        $(document).ready(function(){
+            $("#ContactForm").on("submit",function(e){
+            e.preventDefault();
+
+            $("#loading-img").css("display","block");
+            var sendData = $(this).serialize();
+                $.ajax({
+                type: "POST",
+                url: "/wp-content/themes/Skippermetzer/scripts/get_response.php",
+                data: sendData,
+                success: function(data){
+                        $("#loading-img").css("display","none");
+                        $(".response_msg").text(data);
+                        $(".response_msg").slideDown().fadeOut(4000);
+                        $("#ContactForm").find("input[type=text], input[type=email], textarea").val("");
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

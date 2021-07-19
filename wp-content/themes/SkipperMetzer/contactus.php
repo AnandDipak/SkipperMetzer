@@ -68,12 +68,12 @@ Template Name: Contact us
 <body>
     <div class="wrapper">
         <header class="bg-white mainNav">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
                         <nav class="navbar navbar-expand-lg navbar-light bg-white">
                             <div class="container-fluid">
-                                <a class="navbar-brand" href="#"><img src="/wp-content/themes/SkipperMetzer/Images/Logo-photo/logo.png" alt="Skipper Metzer" style="width: 120px;"></a>
+                                <a class="navbar-brand" href="#"><img src="/wp-content/themes/SkipperMetzer/Images/Logo-photo/skipper-metzer-logo.png" alt="Skipper Metzer" style="width: 120px;"></a>
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
@@ -83,10 +83,11 @@ Template Name: Contact us
                                         <a class="nav-link" href="/about-us">About us</a>
                                         <a class="nav-link" href="/lin-light-flat-integral-dripper">Products</a>
                                         <a class="nav-link" href="/gallery">Gallery</a>
-                                        <a class="nav-link active" aria-current="page" href="#">Contact us</a>
+                                        <a class="nav-link active" aria-current="page" href="/contact-us">Contact us</a>
                                         <a class="nav-link" href="#">
                                             <div id="google_translate_element"></div>
                                         </a>
+                                        <a class="nav-link" href="tel:+9118005722997">Toll Free: 1800 572 2997</a>
                                     </div>
                                 </div>
                             </div>
@@ -97,56 +98,19 @@ Template Name: Contact us
         </header>
         <main>
             <section class="topBanner">
-                <h1 class="text-white mt-3 text-uppercase">Contact Us</h1>
+                <div class="center-items" style=" background: #ffffffb3;width: 400px; text-align:center">
+                    <h1 class=" mt-2 text-uppercase p-5">Contact Us</h1>
+                </div>
             </section>
 
-            <section class="viewSector mt-5">
-               <div class="container-fluid">
-                   <div class="row">
-                        <div class="col-md-3 col-sm-6 col-12 mt-3">
-                            <div class="rowCrops">
-                                <div class="innerField">
-                                <div class="angl"></div>
-                                    <h4>Row Crops</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-12 mt-3">
-                            <div class="orchards">
-                                <div class="innerField">
-                                    <div class="angl"></div>
-                                    <h4>Orchards</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-12 mt-3">
-                            <div class="greenHouses">
-                                <div class="innerField">
-                                <div class="angl"></div>
-                                    <h4>Green Houses</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-12 mt-3">
-                            <div class="landScaping">
-                                <div class="innerField">
-                                <div class="angl"></div>
-                                    <h4>Land Scaping</h4>
-                                </div>
-                            </div>
-                        </div>
-                   </div>
-               </div>
-            </section>
-
-            <section class="ContactSec mt-5">
+            <section class="ContactPage" style="background:transparent;">
                 <div class="overlay">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-6 mt-5">
                                 <div class="p-5">
-                                    <h1 class="text-white"><span>Leave</span> me message</h2>
-                                    <p class="text-white mt-5">
+                                    <h1 class=""><span>Leave</span> me message</h2>
+                                    <p class=" mt-5">
                                     We are eager to discuss your business needs, </br>
                                     And answer any questions you may have
                                     </p>
@@ -154,7 +118,7 @@ Template Name: Contact us
                             </div>
                             <div class="col-md-6 mt-5">
                                 <div class="p-5">
-                                    <form class="ContactForm" id="ContactForm">
+                                    <form class="ContactForm" id="ContactForm" method="post">
                                         <div class="row">
                                             <div class="col-md-12 mb-5">
                                                 <input type="text" name="name" id="name" class="form-control" placeholder="Name" />
@@ -163,18 +127,22 @@ Template Name: Contact us
                                                 <input type="email" name="email" id="email" class="form-control" placeholder="Email" />
                                             </div>
                                             <div class="col-md-6 mb-5">
-                                                <input type="text" name="contact" id="contact" class="form-control" placeholder="Phone Number" />
+                                                <input type="text" name="phoneno" id="phoneno" class="form-control" placeholder="Phone Number" />
                                             </div>
                                             <div class="col-md-12 mb-5">
-                                                <textarea id="message" name="message" class="form-control" placeholder="Message" ></textarea> 
+                                                <textarea id="message" name="message" class="form-control" placeholder="Message"></textarea>
                                             </div>
                                             <div class="col-md-12 mb-5">
-                                                <input type="submit" value="Submit" class="btn bg-white w-100">
+                                                <input type="submit" value="Submit" class="btn  w-100">
+                                            </div>
+                                            <div class="col-md-12 mb-5">
+                                                <div class="response_msg "></div>
+                                                <img src="/wp-content/themes/Skippermetzer/images/loading.gif" id="loading-img" style="display:none;">
                                             </div>
                                         </div>
                                     </form>
                                 </div>
-                            </div>                
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -415,6 +383,26 @@ Template Name: Contact us
                 navigation:false,
                 slideSpeed:1000,
                 autoPlay:true
+            });
+        });
+
+        $(document).ready(function(){
+            $("#ContactForm").on("submit",function(e){
+            e.preventDefault();
+
+            $("#loading-img").css("display","block");
+            var sendData = $(this).serialize();
+                $.ajax({
+                type: "POST",
+                url: "/wp-content/themes/Skippermetzer/scripts/get_response.php",
+                data: sendData,
+                success: function(data){
+                        $("#loading-img").css("display","none");
+                        $(".response_msg").text(data);
+                        $(".response_msg").slideDown().fadeOut(4000);
+                        $("#ContactForm").find("input[type=text], input[type=email], textarea").val("");
+                    }
+                });
             });
         });
          </script>

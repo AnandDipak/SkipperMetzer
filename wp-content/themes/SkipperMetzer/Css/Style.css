@@ -3,6 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
+
+/* @media (min-width: 1200px)
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1366px;
+} */
+
+
+
+
 *{
     padding:0;
     margin:0;
@@ -19,7 +28,7 @@ h2.h2Title {
 }
     h2.h2Title span {
         color: #0AA4E4;
-        border-bottom: 2px solid;
+        border-bottom: 2px solid #0AA4E4;
         padding-bottom: 5px;
         line-height: 45px;
     }
@@ -62,10 +71,11 @@ header.mainNav{
 
 .mainBanner {
     position: relative;
-    background: url('https://ananddipak.github.io/SkipperMetzer/wp-content/themes/SkipperMetzer/Images/Banner-photos/Banner-one.jpg')no-repeat center;
+    background: url('/wp-content/themes/SkipperMetzer/Images/Banner-photos/Banner-one.jpg')no-repeat bottom;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 635px;
+    min-height: 335px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -179,7 +189,7 @@ footer.mainfooter .innerBox ul{
 
 
 footer.mainfooter .innerBox ul li{
-    padding:10px 0;
+    padding:5px 0;
 }
 
 footer.mainfooter .innerBox ul li a{
@@ -229,7 +239,7 @@ footer.mainfooter .innerBox address p i{
 
 
             .amenities {
-                background: url('https://ananddipak.github.io/SkipperMetzer/wp-content/themes/SkipperMetzer/Images/Home-images/banner2.png')no-repeat bottom;
+                background: url('/wp-content/themes/SkipperMetzer/Images/Home-images/banner2.png')no-repeat bottom;
                 background-size: cover;
             }
 
@@ -270,9 +280,9 @@ footer.mainfooter .innerBox address p i{
                     font-size:48px;
                 }
 .productSec .poductBox {
-    background: url('https://ananddipak.github.io/SkipperMetzer/wp-content/themes/SkipperMetzer/Images/Home-images/Frame-8.png')no-repeat bottom;
+    background: url('/wp-content/themes/SkipperMetzer/Images/Home-images/Frame-8.png')no-repeat bottom;
     background-size: cover;
-    min-height: 300px;
+    min-height: 324px;
     color: #fff;
     padding: 10px;
     display: flex;
@@ -297,7 +307,7 @@ footer.mainfooter .innerBox address p i{
         background: #fff;
         border: 1px solid #f0f0f0;
         position: relative;
-        min-height:280px;
+        min-height:304px;
     }
 
         /*.productSec .product .product-content:after {
@@ -425,19 +435,19 @@ footer.mainfooter .innerBox address p i{
     position:relative;
 }
 .viewSector .rowCrops {
-    background: url('https://ananddipak.github.io/SkipperMetzer/wp-content/themes/SkipperMetzer/Images/Home-images/Rectangle-11.png')no-repeat center;
+    background: url('/wp-content/themes/SkipperMetzer/Images/Gallery/row_crop.jpg')no-repeat center;
     background-size: cover;
 }
 .viewSector .orchards {
-    background: url('https://ananddipak.github.io/SkipperMetzer/wp-content/themes/SkipperMetzer/Images/Home-images/Rectangle-12.png')no-repeat center;
+    background: url('/wp-content/themes/SkipperMetzer/Images/Gallery/Orchard.jpg')no-repeat center;
     background-size: cover;
 }
 .viewSector .greenHouses {
-    background: url('https://ananddipak.github.io/SkipperMetzer/wp-content/themes/SkipperMetzer/Images/Home-images/Rectangle-13.png')no-repeat center;
+    background: url('/wp-content/themes/SkipperMetzer/Images/Banner-photos/green-House.jpg')no-repeat center;
     background-size: cover;
 }
 .viewSector .landScaping {
-    background: url('https://ananddipak.github.io/SkipperMetzer/wp-content/themes/SkipperMetzer/Images/Home-images/Rectangle-14.png')no-repeat center;
+    background: url('/wp-content/themes/SkipperMetzer/Images/Home-images/Rectangle-14.png')no-repeat center;
     background-size: cover;
 }
 .viewSector .innerField {
@@ -555,9 +565,10 @@ footer.mainfooter .innerBox address p i{
     }
 
 .ContactSec {
-    background: url('https://ananddipak.github.io/SkipperMetzer/wp-content/themes/SkipperMetzer/Images/Home-images/banner.png')no-repeat bottom;
-    background-size: cover;
+    /* background: url('https://ananddipak.github.io/SkipperMetzer/wp-content/themes/SkipperMetzer/Images/Home-images/banner.png')no-repeat bottom;
+    background-size: cover; */
     /*min-height:500px;*/
+        background: linear-gradient(98.91deg, rgba(0, 0, 0, 0.9) 7.28%, rgba(30, 29, 29, 0.9) 52.45%, rgba(0, 0, 0, 0.9) 92.96%);
 }
     .ContactSec .overlay{
         /*background-color:rgba(0,0,0,.6);*/
@@ -611,6 +622,84 @@ footer.mainfooter .innerBox address p i{
 
         .ContactSec .overlay .ContactForm .btn{
             border-radius:20px;
+        }
+
+        .addressSec .address {
+            margin: 0 20px 40px;
+        }
+
+        .ContactPage {
+            /* background: url('https://ananddipak.github.io/SkipperMetzer/wp-content/themes/SkipperMetzer/Images/Home-images/banner.png')no-repeat bottom;
+    background-size: cover; */
+            /*min-height:500px;*/
+            background: linear-gradient(98.91deg, rgba(0, 0, 0, 0.9) 7.28%, rgba(30, 29, 29, 0.9) 52.45%, rgba(0, 0, 0, 0.9) 92.96%);
+        }
+
+        .ContactPage .overlay {
+            /*background-color:rgba(0,0,0,.6);*/
+            /*height:100vh;*/
+        }
+
+        .ContactPage .overlay h1 {
+            font-family: 'Pinyon Script', cursive;
+            font-size: 2.5rem;
+        }
+
+        .ContactPage .overlay h1 span {
+            font-family: 'Pinyon Script', cursive;
+            font-size: 2.5rem;
+            border-bottom: 2px solid;
+        }
+
+        .ContactPage .overlay .ContactForm input.form-control,
+        .ContactPage .overlay .ContactForm textarea.form-control {
+            background: transparent;
+            border: none;
+            border-radius: 0;
+            /* color: #fff; */
+            padding: 10px 0;
+            border-bottom: 2px solid #efefef;
+        }
+
+        .ContactPage .overlay .ContactForm input.form-control:focus,
+        .ContactPage .overlay .ContactForm textarea.form-control:focus {
+            outline: none;
+            box-shadow: 0 0 0 0 transparent;
+        }
+
+        .ContactPage .overlay .ContactForm ::-webkit-input-placeholder {
+            /* WebKit, Blink, Edge */
+            /* color: #fff !important; */
+        }
+
+        .ContactPage .overlay .ContactForm :-moz-placeholder {
+            /* Mozilla Firefox 4 to 18 */
+            /* color: #fff !important; */
+            opacity: 1;
+        }
+
+        .ContactPage .overlay .ContactForm ::-moz-placeholder {
+            /* Mozilla Firefox 19+ */
+            /* color: #fff !important; */
+            opacity: 1;
+        }
+
+        .ContactPage .overlay .ContactForm :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #fff !important;
+        }
+
+        .ContactPage .overlay .ContactForm .btn {
+            border-radius: 20px;
+            color:rgba(10, 164, 228, 1);
+            border-color:rgba(10, 164, 228, 1);
+            background:#fff;
+        }
+        .ContactPage .overlay .ContactForm .btn:hover {
+            border-radius: 20px;
+            color:#fff;
+            border-color:rgba(10, 164, 228, 1);
+            background:rgba(10, 164, 228, 1);
         }
 
         .addressSec .address {
@@ -726,13 +815,30 @@ footer.mainfooter .innerBox address p i{
 
 
 /* ==================================================== About Us Page ========================================================*/
+.topBannerProducts {
+    position: relative;
+    background: url('/wp-content/themes/SkipperMetzer/Images/Products/productsBanner.jpg')no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+    .topBannerProducts h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight:700;
+    }
 
 .topBanner {
     position: relative;
-    background: url('https://ananddipak.github.io/SkipperMetzer/wp-content/themes/SkipperMetzer/Images/Banner-photos/topBanner.jpg')no-repeat center;
+    background: url('/wp-content/themes/SkipperMetzer/Images/Banner-photos/topBanner.jpg')no-repeat 100% 80%;
     background-size: cover;
     width: 100%;
-    height: 300px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -746,36 +852,36 @@ footer.mainfooter .innerBox address p i{
     }
 
 .aboutUsDescription p.discription {
-    font-size:14px;
+    font-size:16px;
     font-weight:500;
-    line-height:28px;
+    line-height:32px;
 }
 .promoters p.discription {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 28px;
+    line-height: 32px;
 }
 
 .messageBox p.discription {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 28px;
+    line-height: 32px;
 }
 
 .promoters .youtubeVideo {
-    background: #04275C;
+    /* background: #04275C; */
     position: relative;
     height: 100%;
     min-height: 450px
 }
     .promoters .youtubeVideo h2{
         font-size:2rem;
-        color:#fff;
+        color:#04275C;
         padding:20px;
     }
     .promoters .youtubeVideo iframe {
         position: absolute;
-        bottom: 48px;
+        bottom: 18px;
         padding: 15px;
     }
 
@@ -794,7 +900,7 @@ footer.mainfooter .innerBox address p i{
     min-width: 180px;
 }
 .gallery img{
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 /* ========================================================== products ==========================================================*/
